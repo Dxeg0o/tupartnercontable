@@ -82,6 +82,39 @@ const processSteps = [
   },
 ];
 
+const serviceModes = [
+  {
+    title: "Externalización",
+    description:
+      "Delegá tus tareas administrativas y concéntrate en lo que realmente importa. Nuestra solución optimiza tus procesos y reduce la carga operativa.",
+    benefits: [
+      "Equipo dedicado y multidisciplinario",
+      "Implementación de herramientas digitales",
+      "Visibilidad en tiempo real de indicadores",
+    ],
+  },
+  {
+    title: "Asesoría Permanente",
+    description:
+      "Brindamos el respaldo que tu negocio necesita para tomar decisiones informadas. Te acompañamos con gobierno financiero y gestión de riesgos.",
+    benefits: [
+      "Reuniones estratégicas recurrentes",
+      "Alertas proactivas ante contingencias",
+      "Actualizaciones normativas continuas",
+    ],
+  },
+  {
+    title: "Asesoría Esporádica",
+    description:
+      "¿Necesitás una opinión experta puntual? Analizamos casos específicos y te entregamos recomendaciones accionables para actuar con confianza.",
+    benefits: [
+      "Diagnóstico integral en 72 horas",
+      "Informe ejecutivo con próximos pasos",
+      "Acceso a especialistas senior",
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
@@ -397,6 +430,103 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute left-8 top-1/2 hidden h-px w-10 -translate-y-1/2 bg-gradient-to-r from-indigo-200 to-transparent md:block" />
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section
+          id="modalidades"
+          className="mt-28 grid gap-12 rounded-[2.8rem] border border-slate-100/70 bg-white/70 p-10 shadow-2xl shadow-indigo-100/60 lg:grid-cols-[1.05fr_1fr]"
+          aria-labelledby="modalidades-heading"
+        >
+          <div className="flex flex-col gap-6">
+            <div className="inline-flex items-center gap-2 self-start rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+              <span className="h-2 w-2 rounded-full bg-indigo-500" />
+              Soluciones a la medida
+            </div>
+            <div className="space-y-5">
+              <h2
+                id="modalidades-heading"
+                className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+              >
+                Nuestras Modalidades de Servicio
+              </h2>
+              <p className="max-w-xl text-base leading-relaxed text-slate-600">
+                Adaptamos nuestra colaboración al ritmo de tu organización, asegurando acompañamiento experto en cada fase de crecimiento y transformación.
+              </p>
+            </div>
+            <div className="relative mt-6 overflow-hidden rounded-[2.4rem] border border-indigo-100 bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 p-8 text-white shadow-xl">
+              <div className="absolute right-6 top-6 h-16 w-16 rounded-3xl bg-white/10" />
+              <div className="absolute -left-10 bottom-6 h-20 w-20 rounded-full bg-white/15 blur-2xl" />
+              <div className="relative space-y-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-100/80">
+                  Equipo certificado
+                </p>
+                <p className="text-3xl font-semibold tracking-tight">+15 años</p>
+                <p className="text-sm text-indigo-100">
+                  de experiencia combinada acompañando startups, pymes y corporativos en Latinoamérica.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid gap-6">
+            {serviceModes.map((mode) => (
+              <article
+                key={mode.title}
+                className="group flex flex-col gap-5 rounded-[2rem] border border-slate-100 bg-white/90 p-7 shadow-lg shadow-indigo-100/40 transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-indigo-200"
+              >
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-400 to-sky-400 text-white shadow-lg shadow-indigo-200/70">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6v12m6-6H6"
+                    />
+                  </svg>
+                </div>
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold text-slate-900">{mode.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-600">{mode.description}</p>
+                </div>
+                <ul className="flex flex-col gap-3 text-sm text-slate-600">
+                  {mode.benefits.map((benefit) => (
+                    <li key={benefit} className="flex items-start gap-3">
+                      <span className="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-indigo-500 to-sky-400" />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-2">
+                  <Link
+                    href="#contacto"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 transition hover:text-indigo-700"
+                  >
+                    Conversemos
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="h-4 w-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
