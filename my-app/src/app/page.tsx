@@ -49,6 +49,39 @@ const services = [
   },
 ];
 
+const processSteps = [
+  {
+    number: "01",
+    title: "Entendemos tus necesidades",
+    description:
+      "Comenzamos con una reunión inmersiva donde analizamos tus indicadores, estructura y desafíos para co-crear objetivos claros.",
+    insight:
+      "Mapeamos oportunidades de mejora con foco en eficiencia operativa, cumplimiento y crecimiento sostenible.",
+    image:
+      "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    number: "02",
+    title: "Diseñamos una solución a medida",
+    description:
+      "Activamos un equipo multidisciplinario para construir un plan con hitos, responsables y tecnología habilitante.",
+    insight:
+      "Priorizamos quick wins y automatizaciones que entregan visibilidad financiera desde el primer mes.",
+    image:
+      "https://images.unsplash.com/photo-1523952578875-bf77b7f1d7c4?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    number: "03",
+    title: "Implementamos y acompañamos",
+    description:
+      "Ejecutamos el roadmap con seguimiento cercano, tableros compartidos y revisión de métricas clave.",
+    insight:
+      "Nuestro squad permanece a tu lado para ajustar estrategias y asegurar resultados sostenidos.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
@@ -314,6 +347,64 @@ export default function Home() {
               >
                 Agenda una consultoría
               </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-24" aria-labelledby="proceso-heading">
+          <div className="rounded-[2.5rem] border border-slate-200 bg-white/70 p-10 shadow-xl shadow-indigo-100 backdrop-blur-sm">
+            <div className="flex flex-col gap-6 text-center">
+              <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                <span className="h-2 w-2 rounded-full bg-indigo-500" />
+                Nuestro proceso
+              </div>
+              <div className="space-y-4">
+                <h2
+                  id="proceso-heading"
+                  className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+                >
+                  Transparencia y resultados en cada etapa
+                </h2>
+                <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600">
+                  Sumamos metodología, data y acompañamiento continuo para que cada decisión financiera se tome con seguridad y visibilidad total.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative mt-14 space-y-12 before:absolute before:left-8 before:top-0 before:h-full before:w-0.5 before:rounded-full before:bg-gradient-to-b before:from-indigo-100 before:via-indigo-200/70 before:to-indigo-100 before:content-[''] md:space-y-16 md:before:left-12">
+              {processSteps.map((step) => (
+                <article
+                  key={step.number}
+                  className="group relative grid gap-8 rounded-[2.2rem] border border-slate-200 bg-white/90 p-8 shadow-lg shadow-indigo-100 backdrop-blur-sm transition hover:-translate-y-1.5 hover:border-indigo-200/80 hover:shadow-2xl md:grid-cols-[auto_1fr] md:items-center"
+                >
+                  <div className="relative flex items-center gap-4 md:flex-col md:items-start">
+                    <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 text-2xl font-semibold text-white shadow-lg shadow-indigo-200">
+                      {step.number}
+                    </div>
+                    <div className="hidden h-full w-px bg-gradient-to-b from-indigo-200 to-transparent md:block" />
+                  </div>
+                  <div className="grid gap-6 md:grid-cols-[1.2fr_1fr] md:items-center">
+                    <div className="space-y-4 text-left">
+                      <h3 className="text-2xl font-semibold tracking-tight text-slate-900">
+                        {step.title}
+                      </h3>
+                      <p className="text-sm leading-relaxed text-slate-600">
+                        {step.description}
+                      </p>
+                      <div className="rounded-2xl border border-indigo-100 bg-indigo-50/70 p-4 text-sm font-medium text-indigo-700 shadow-inner">
+                        {step.insight}
+                      </div>
+                    </div>
+                    <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 shadow-md">
+                      <div
+                        className="h-48 bg-cover bg-center transition duration-700 group-hover:scale-[1.03]"
+                        style={{ backgroundImage: `url('${step.image}')` }}
+                      />
+                    </div>
+                  </div>
+                  <div className="absolute left-8 top-1/2 hidden h-px w-10 -translate-y-1/2 bg-gradient-to-r from-indigo-200 to-transparent md:block" />
+                </article>
+              ))}
             </div>
           </div>
         </section>
