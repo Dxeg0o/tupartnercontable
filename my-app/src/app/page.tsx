@@ -240,10 +240,17 @@ export default function Home() {
           </div>
         </main>
 
-        <section className="mt-24" aria-labelledby="servicios-heading">
-          <div className="rounded-[2.5rem] border border-slate-200 bg-white/80 p-10 shadow-xl shadow-indigo-100 backdrop-blur-sm">
+        <section
+          className="relative mt-24 overflow-hidden py-20"
+          aria-labelledby="servicios-heading"
+        >
+          <div className="pointer-events-none absolute inset-0 -z-10 opacity-80">
+            <div className="absolute -left-10 top-0 h-72 w-72 rounded-full bg-indigo-200/40 blur-3xl" />
+            <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-sky-200/40 blur-3xl" />
+          </div>
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="flex flex-col gap-6 text-center">
-              <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+              <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600 shadow-sm shadow-indigo-100">
                 <span className="h-2 w-2 rounded-full bg-indigo-500" />
                 Servicios integrales
               </div>
@@ -260,14 +267,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-12 grid gap-8 lg:grid-cols-3">
+            <div className="mt-16 grid gap-10 lg:grid-cols-3">
               {services.map((service) => (
                 <article
                   key={service.id}
                   id={service.id}
-                  className="group flex h-full flex-col gap-6 rounded-3xl border border-slate-200 bg-white p-8 text-left shadow-sm transition hover:-translate-y-1 hover:border-indigo-200 hover:shadow-lg"
+                  className="group flex h-full flex-col gap-6 rounded-3xl bg-white/80 p-8 text-left shadow-lg shadow-indigo-100 ring-1 ring-white/60 transition duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-2xl hover:shadow-indigo-200"
                 >
-                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-400 to-sky-400 text-white shadow-lg shadow-indigo-200">
+                  <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 text-white shadow-lg shadow-indigo-200">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -303,7 +310,7 @@ export default function Home() {
                   <div className="mt-auto">
                     <Link
                       href={service.href}
-                      className="inline-flex items-center gap-2 rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-indigo-200 hover:text-indigo-600"
+                      className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-5 py-2 text-sm font-semibold text-indigo-600 transition hover:border-indigo-200 hover:bg-white hover:text-indigo-700"
                     >
                       Saber más
                       <svg
@@ -328,7 +335,7 @@ export default function Home() {
 
             <div
               id="empresas"
-              className="mt-12 flex flex-col items-center justify-between gap-6 rounded-3xl border border-indigo-100 bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500 px-8 py-10 text-center text-white shadow-lg shadow-indigo-200 lg:flex-row lg:text-left"
+              className="mt-16 flex flex-col items-center justify-between gap-6 rounded-[2.5rem] bg-gradient-to-r from-indigo-600 via-indigo-500 to-sky-500 px-10 py-12 text-center text-white shadow-xl shadow-indigo-200/70 ring-1 ring-indigo-400/40 lg:flex-row lg:text-left"
             >
               <div className="space-y-3">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-200">
@@ -351,10 +358,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-24" aria-labelledby="proceso-heading">
-          <div className="rounded-[2.5rem] border border-slate-200 bg-white/70 p-10 shadow-xl shadow-indigo-100 backdrop-blur-sm">
+        <section
+          className="relative mt-24 overflow-hidden py-20"
+          aria-labelledby="proceso-heading"
+        >
+          <div className="pointer-events-none absolute inset-0 -z-10 opacity-70">
+            <div className="absolute left-1/3 top-0 h-64 w-64 rounded-full bg-indigo-100 blur-3xl" />
+            <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-white/60 blur-3xl" />
+          </div>
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="flex flex-col gap-6 text-center">
-              <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+              <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600 shadow-sm shadow-indigo-100">
                 <span className="h-2 w-2 rounded-full bg-indigo-500" />
                 Nuestro proceso
               </div>
@@ -371,11 +385,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative mt-14 space-y-12 before:absolute before:left-8 before:top-0 before:h-full before:w-0.5 before:rounded-full before:bg-gradient-to-b before:from-indigo-100 before:via-indigo-200/70 before:to-indigo-100 before:content-[''] md:space-y-16 md:before:left-12">
+            <div className="relative mt-16 space-y-14 before:absolute before:left-8 before:top-0 before:h-full before:w-0.5 before:rounded-full before:bg-gradient-to-b before:from-indigo-100 before:via-indigo-200/70 before:to-indigo-100 before:content-[''] md:space-y-16 md:before:left-12">
               {processSteps.map((step) => (
                 <article
                   key={step.number}
-                  className="group relative grid gap-8 rounded-[2.2rem] border border-slate-200 bg-white/90 p-8 shadow-lg shadow-indigo-100 backdrop-blur-sm transition hover:-translate-y-1.5 hover:border-indigo-200/80 hover:shadow-2xl md:grid-cols-[auto_1fr] md:items-center"
+                  className="group relative grid gap-8 rounded-[2.2rem] bg-white/80 p-8 shadow-xl shadow-indigo-100 ring-1 ring-white/60 transition duration-300 hover:-translate-y-1.5 hover:bg-white hover:shadow-2xl hover:shadow-indigo-200 md:grid-cols-[auto_1fr] md:items-center"
                 >
                   <div className="relative flex items-center gap-4 md:flex-col md:items-start">
                     <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 text-2xl font-semibold text-white shadow-lg shadow-indigo-200">
@@ -391,13 +405,13 @@ export default function Home() {
                       <p className="text-sm leading-relaxed text-slate-600">
                         {step.description}
                       </p>
-                      <div className="rounded-2xl border border-indigo-100 bg-indigo-50/70 p-4 text-sm font-medium text-indigo-700 shadow-inner">
+                      <div className="rounded-2xl border border-indigo-100 bg-indigo-50/80 p-4 text-sm font-medium text-indigo-700 shadow-inner">
                         {step.insight}
                       </div>
                     </div>
-                    <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 shadow-md">
+                    <div className="overflow-hidden rounded-[1.8rem] border border-white/70 shadow-md shadow-indigo-100">
                       <div
-                        className="h-48 bg-cover bg-center transition duration-700 group-hover:scale-[1.03]"
+                        className="h-48 bg-cover bg-center transition duration-700 group-hover:scale-[1.04]"
                         style={{ backgroundImage: `url('${step.image}')` }}
                       />
                     </div>
