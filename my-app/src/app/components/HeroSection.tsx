@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -54,12 +55,13 @@ export function HeroSection() {
       <div className="relative flex items-center justify-center">
         <div className="relative w-full max-w-[420px]">
           <div className="relative overflow-hidden rounded-[3rem] border border-slate-200 bg-slate-200 shadow-xl">
-            <div
-              className="h-[520px] bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1529429617124-aee711a2bc95?auto=format&fit=crop&w=900&q=80')",
-              }}
+            <Image
+              src="/Partner-Accounting-Home-01.jpg"
+              alt="Equipo contable trabajando en una reunión en oficina moderna"
+              width={420}
+              height={520}
+              className="h-[520px] w-full object-cover"
+              priority
             />
           </div>
 

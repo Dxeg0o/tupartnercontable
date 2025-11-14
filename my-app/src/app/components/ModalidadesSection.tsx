@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface ServiceMode {
@@ -16,12 +17,12 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
       <div className="relative flex items-center justify-center">
         <div className="relative w-full max-w-[420px]">
           <div className="overflow-hidden rounded-[3rem] border border-slate-200 bg-white shadow-xl shadow-indigo-100">
-            <div
-              className="h-[520px] bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80')",
-              }}
+            <Image
+              src="/IT-Business-Benefits-Image.webp"
+              alt="Profesionales analizando indicadores financieros en una tablet"
+              width={420}
+              height={520}
+              className="h-[520px] w-full object-cover"
             />
           </div>
 
