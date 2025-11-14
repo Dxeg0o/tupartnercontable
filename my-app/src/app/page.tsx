@@ -82,6 +82,39 @@ const processSteps = [
   },
 ];
 
+const modalities = [
+  {
+    title: "Externalización",
+    description:
+      "Delegá tus tareas administrativas y concéntrate en lo que realmente importa. Nuestra solución de outsourcing libera tu agenda, optimiza recursos y asegura cumplimiento permanente.",
+    bullets: [
+      "Equipo senior asignado con seguimiento proactivo",
+      "KPIs y tableros compartidos para decisiones oportunas",
+      "Integración con tus herramientas financieras en semanas",
+    ],
+  },
+  {
+    title: "Asesoría Permanente",
+    description:
+      "Nos volvemos parte de tu equipo para acompañarte con un comité financiero mensual, revisión tributaria continua y planes de mejora evolutivos.",
+    bullets: [
+      "Diagnóstico estratégico cada trimestre",
+      "Proyección de flujo y escenarios tributarios",
+      "Actualización normativa y alertas personalizadas",
+    ],
+  },
+  {
+    title: "Asesoría Esporádica",
+    description:
+      "¿Necesitás una opinión experta puntual? Te damos respuestas ágiles respaldadas por especialistas para resolver dudas estratégicas y operativas sin burocracia.",
+    bullets: [
+      "Disponibilidad on-demand en 24 horas",
+      "Informes ejecutivos accionables",
+      "Sesiones remotas grabadas para tu equipo",
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
@@ -399,6 +432,85 @@ export default function Home() {
                 <div className="absolute left-8 top-1/2 hidden h-px w-10 -translate-y-1/2 bg-gradient-to-r from-indigo-200 to-transparent md:block" />
               </article>
             ))}
+          </div>
+        </section>
+
+        <section
+          id="modalidades"
+          className="mt-28 grid gap-12 rounded-[2.8rem] border border-slate-100/80 bg-white/80 p-10 shadow-2xl shadow-indigo-100/60 lg:grid-cols-[0.9fr_1.1fr] lg:p-14"
+          aria-labelledby="modalidades-heading"
+        >
+          <div className="relative overflow-hidden rounded-[2.4rem] border border-slate-100 bg-gradient-to-br from-indigo-600 via-indigo-500 to-sky-500 p-10 text-white shadow-xl">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.25),transparent_60%)]" />
+            <div className="relative flex h-full flex-col justify-between gap-10">
+              <div className="inline-flex items-center gap-2 self-start rounded-full border border-white/40 bg-white/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-white/90">
+                <span className="h-2 w-2 rounded-full bg-white" />
+                Soluciones a la medida
+              </div>
+              <div className="relative mt-auto grid gap-6">
+                <div className="rounded-3xl border border-white/40 bg-white/15 p-6 backdrop-blur">
+                  <p className="text-sm font-medium uppercase tracking-[0.3em] text-indigo-100/90">
+                    Squad dedicado
+                  </p>
+                  <p className="mt-3 text-3xl font-semibold leading-snug text-white">
+                    Co-creamos con tus líderes financieros para acelerar la toma de decisiones.
+                  </p>
+                </div>
+                <div className="flex items-center gap-4 rounded-3xl border border-white/40 bg-white/10 p-5 backdrop-blur">
+                  <div className="h-12 w-12 rounded-2xl bg-white/90 text-center text-lg font-semibold text-indigo-600">
+                    24h
+                  </div>
+                  <div className="text-sm font-medium text-indigo-50/90">
+                    Resolvemos requerimientos críticos en menos de 24 horas hábiles.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-10">
+            <div className="space-y-5">
+              <p className="text-xs font-semibold uppercase tracking-[0.35em] text-indigo-500/80">
+                Soluciones a la medida
+              </p>
+              <h2
+                id="modalidades-heading"
+                className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+              >
+                Nuestras Modalidades de Servicio
+              </h2>
+              <p className="max-w-2xl text-base leading-relaxed text-slate-600">
+                Adaptamos nuestros modelos de trabajo a la madurez y ritmo de tu organización para garantizar continuidad operativa, insights accionables y acompañamiento experto en cada etapa.
+              </p>
+            </div>
+
+            <div className="grid gap-6">
+              {modalities.map((modality) => (
+                <article
+                  key={modality.title}
+                  className="group flex flex-col gap-4 rounded-[1.8rem] border border-slate-100/80 bg-white/90 p-7 shadow-lg shadow-indigo-100/60 transition hover:-translate-y-1 hover:border-indigo-200/70 hover:shadow-indigo-200/70 sm:flex-row sm:items-start sm:gap-8"
+                >
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-400 to-sky-400 text-base font-semibold text-white shadow-lg shadow-indigo-200/70">
+                    {modality.title.charAt(0)}
+                  </div>
+                  <div className="space-y-3">
+                    <div className="space-y-2">
+                      <h3 className="text-xl font-semibold text-slate-900">{modality.title}</h3>
+                      <p className="text-sm leading-relaxed text-slate-600">{modality.description}</p>
+                    </div>
+                    <ul className="grid gap-2 text-sm text-slate-600">
+                      {modality.bullets.map((bullet) => (
+                        <li key={bullet} className="flex items-start gap-3">
+                          <span className="mt-1 inline-flex h-2.5 w-2.5 flex-shrink-0 rounded-full bg-gradient-to-r from-indigo-500 to-sky-400" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="hidden h-full w-px bg-gradient-to-b from-indigo-100 to-transparent sm:block" />
+                </article>
+              ))}
+            </div>
           </div>
         </section>
       </div>
