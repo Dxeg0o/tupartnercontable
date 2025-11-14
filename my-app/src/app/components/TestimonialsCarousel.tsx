@@ -13,24 +13,24 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    companyLogo: "/testimonials/la-sonora.svg",
-    companyAlt: "La Sonora",
+    companyLogo: "/carrousel/Tommy-Rey.jpg",
+    companyAlt: "Leo Soto de La Sonora de Tommy Rey",
     quote:
       "Nos ayudaron a implementar una estructura tributaria que ha sido clave para el crecimiento de nuestras actividades culturales, aprovechando todos los beneficios fiscales disponibles. Hoy operamos de manera más eficiente y sin los obstáculos tributarios que antes enfrentábamos.",
     author: "Leo Soto",
     role: "Manager & Productor Musical de La Sonora de Tommy Rey",
   },
   {
-    companyLogo: "/testimonials/marley-coffee.svg",
-    companyAlt: "Marley Coffee",
+    companyLogo: "/carrousel/Marley.jpg",
+    companyAlt: "Roberto Larsen Suau de Marley Coffee",
     quote:
       "Gracias a su asesoría, hemos optimizado recursos, evitado contingencias tributarias y mejorado la productividad interna. Su conocimiento profundo del mercado y su atención dedicada nos hacen sentir seguros en cada paso.",
     author: "Roberto Larsen Suau",
     role: "CEO de Marley Coffee",
   },
   {
-    companyLogo: "/testimonials/grace-college.svg",
-    companyAlt: "Grace College",
+    companyLogo: "/carrousel/Greace-College.png",
+    companyAlt: "Roberto Álvarez de Grace College",
     quote:
       "El manejo financiero y contable de Grace College ha mejorado significativamente desde que comenzamos a trabajar con ellos. Su asesoría ha sido fundamental para llevar a cabo proyectos de expansión, con una planificación fiscal sólida y eficiente.",
     author: "Roberto Álvarez",
@@ -77,13 +77,13 @@ export function TestimonialsCarousel() {
       <div className="relative w-full max-w-4xl">
         <div className="rounded-[2.75rem] border border-slate-200/80 bg-white/80 p-10 text-center shadow-2xl shadow-indigo-100/60">
           <div className="flex justify-center">
-            <span className="flex h-16 w-16 items-center justify-center rounded-full border border-indigo-100 bg-indigo-50">
+            <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-indigo-100 bg-indigo-50">
               <Image
                 src={activeTestimonial.companyLogo}
                 alt={activeTestimonial.companyAlt}
-                width={48}
-                height={48}
-                className="h-12 w-12 object-contain"
+                width={80}
+                height={80}
+                className="h-20 w-20 object-cover"
               />
             </span>
           </div>
