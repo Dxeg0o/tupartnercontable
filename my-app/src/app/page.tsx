@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TestimonialsCarousel from "./components/TestimonialsCarousel";
 
 const navigation = [
   { label: "Asesoría Contable", href: "#servicios" },
@@ -422,6 +423,8 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <TestimonialsCarousel />
 
         <section
           id="modalidades"
