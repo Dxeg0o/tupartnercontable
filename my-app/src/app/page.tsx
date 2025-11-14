@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
+
 const navigation = [
   { label: "Asesoría Contable", href: "#servicios" },
   { label: "Asesoría Tributaria", href: "#tributaria" },
@@ -366,6 +368,8 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
+        <TestimonialsCarousel />
 
         <section className="mt-28 space-y-16" aria-labelledby="proceso-heading">
           <div className="flex flex-col gap-6 text-center">
