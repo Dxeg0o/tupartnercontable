@@ -1,3 +1,4 @@
+import { FAQSection } from "./components/FAQSection";
 import { HeroSection } from "./components/HeroSection";
 import { ModalidadesSection } from "./components/ModalidadesSection";
 import { Navigation } from "./components/Navigation";
@@ -10,6 +11,7 @@ const navigation = [
   { label: "Asesoría Tributaria", href: "#tributaria" },
   { label: "Asesoría en Recursos Humanos", href: "#rrhh" },
   { label: "Empresas", href: "#empresas" },
+  { label: "Preguntas", href: "#faq" },
 ];
 
 const services = [
@@ -121,6 +123,8 @@ export default function Home() {
         <TestimonialsCarousel />
 
         <ProcessSection steps={processSteps} />
+
+        <FAQSection />
 
         <ModalidadesSection serviceModes={serviceModes} />
       </div>
