@@ -1,6 +1,7 @@
 import { ContactSection } from "./components/ContactSection";
 import { FAQSection } from "./components/FAQSection";
 import { HeroSection } from "./components/HeroSection";
+import { Footer } from "./components/Footer";
 import { ModalidadesSection } from "./components/ModalidadesSection";
 import { Navigation } from "./components/Navigation";
 import { ProcessSection } from "./components/ProcessSection";
@@ -128,6 +129,7 @@ export default function Home() {
 
         <ContactSection />
       </div>
+      <Footer />
     </div>
   );
 }
