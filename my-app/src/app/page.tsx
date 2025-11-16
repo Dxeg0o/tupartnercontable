@@ -7,14 +7,7 @@ import { Navigation } from "./components/Navigation";
 import { ProcessSection } from "./components/ProcessSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
-
-const navigation = [
-  { label: "Asesoría Contable", href: "#servicios" },
-  { label: "Asesoría Tributaria", href: "#tributaria" },
-  { label: "Asesoría en Recursos Humanos", href: "#rrhh" },
-  { label: "Empresas", href: "#empresas" },
-  { label: "Preguntas", href: "#faq" },
-];
+import { landingNavigation } from "./navigation.data";
 
 const services = [
   {
@@ -112,7 +105,7 @@ const serviceModes = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
-      <Navigation navigation={navigation} />
+      <Navigation navigation={landingNavigation} />
 
       <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">
         <HeroSection />

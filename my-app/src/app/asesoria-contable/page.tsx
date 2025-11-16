@@ -2,19 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
+import { landingNavigation } from "../navigation.data";
 
 export const metadata: Metadata = {
   title: "Asesoría Contable | Partner Accounting",
   description:
     "Detalle del servicio de asesoría contable de Partner Accounting: beneficios, alcance y actividades incluidas.",
 };
-
-const navigation = [
-  { label: "Descripción", href: "#descripcion" },
-  { label: "Beneficios", href: "#beneficios" },
-  { label: "Servicios", href: "#servicios-incluidos" },
-  { label: "Volver al inicio", href: "/" },
-];
 
 const benefits = [
   {
@@ -68,7 +62,7 @@ const serviceHighlights = [
 export default function AccountingAdvisoryPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
-      <Navigation navigation={navigation} />
+      <Navigation navigation={landingNavigation} />
 
       <main
         id="inicio"
@@ -82,7 +76,7 @@ export default function AccountingAdvisoryPage() {
             Asesoría Contable
           </p>
           <h1 className="mt-4 text-3xl font-semibold text-slate-900 lg:text-4xl">
-            Delegá tu contabilidad y concentrate en hacer crecer tu negocio
+            Delega tu contabilidad y concéntrate en hacer crecer tu negocio
           </h1>
           <p className="mt-6 text-base text-slate-600">
             Nuestro equipo se integra a tu operación para manejar el registro diario, la elaboración de reportes y el análisis
@@ -140,7 +134,7 @@ export default function AccountingAdvisoryPage() {
           <div className="border-b border-slate-200 pb-6">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Servicios incluidos</p>
             <h2 className="mt-3 text-2xl font-semibold text-slate-900 lg:text-3xl">
-              Todo lo que necesitás para una contabilidad confiable
+              Todo lo que necesitas para una contabilidad confiable
             </h2>
             <p className="mt-4 text-base text-slate-600">
               Cubrimos la operación diaria y los análisis avanzados para que la información financiera llegue depurada, a tiempo
@@ -185,7 +179,7 @@ export default function AccountingAdvisoryPage() {
         </section>
 
         <section id="contacto" className="rounded-3xl border border-slate-200 bg-white/70 p-6">
-          <p className="text-sm font-semibold text-slate-900">¿Necesitás hablar con un especialista?</p>
+          <p className="text-sm font-semibold text-slate-900">¿Necesitas hablar con un especialista?</p>
           <p className="mt-2 text-sm text-slate-600">
             Escríbenos a supervisor@partner-accounting.cl o agenda una llamada desde la página principal para coordinar una
             revisión detallada de tus requerimientos contables.
