@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
 import { landingNavigation } from "../navigation.data";
+import { ContactSection } from "../components/ContactSection";
 
 export const metadata: Metadata = {
   title: "Asesoría Contable | Partner Accounting",
@@ -79,23 +79,31 @@ export default function AccountingAdvisoryPage() {
             Delega tu contabilidad y concéntrate en hacer crecer tu negocio
           </h1>
           <p className="mt-6 text-base text-slate-600">
-            Nuestro equipo se integra a tu operación para manejar el registro diario, la elaboración de reportes y el análisis
-            financiero que sostiene decisiones informadas. Administramos transacciones, elaboramos informes y exponemos riesgos
-            u oportunidades para que tengas claridad absoluta sobre la salud económica de tu empresa.
+            Nuestro equipo se integra a tu operación para manejar el registro
+            diario, la elaboración de reportes y el análisis financiero que
+            sostiene decisiones informadas. Administramos transacciones,
+            elaboramos informes y exponemos riesgos u oportunidades para que
+            tengas claridad absoluta sobre la salud económica de tu empresa.
           </p>
           <div className="mt-8 grid gap-6 border-t border-slate-100 pt-6 sm:grid-cols-2">
             <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Cómo trabajamos</p>
+              <p className="text-sm font-semibold text-slate-500">
+                Cómo trabajamos
+              </p>
               <p className="mt-2 text-sm text-slate-600">
-                Diseñamos procedimientos personalizados, alineados a tus sistemas, para capturar información contable desde el
-                primer día sin interrumpir tus flujos actuales.
+                Diseñamos procedimientos personalizados, alineados a tus
+                sistemas, para capturar información contable desde el primer día
+                sin interrumpir tus flujos actuales.
               </p>
             </div>
             <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Resultados esperados</p>
+              <p className="text-sm font-semibold text-slate-500">
+                Resultados esperados
+              </p>
               <p className="mt-2 text-sm text-slate-600">
-                Entregamos visibilidad constante con tableros, cierres periódicos y reuniones de seguimiento que permiten actuar
-                sobre indicadores clave a tiempo.
+                Entregamos visibilidad constante con tableros, cierres
+                periódicos y reuniones de seguimiento que permiten actuar sobre
+                indicadores clave a tiempo.
               </p>
             </div>
           </div>
@@ -110,8 +118,9 @@ export default function AccountingAdvisoryPage() {
               Más orden, control y criterio financiero en un mismo servicio
             </h2>
             <p className="mt-4 max-w-3xl text-base text-slate-600">
-              Cada bloque de la asesoría está pensado para liberar tiempo operativo, reducir contingencias y convertir la
-              contabilidad en una herramienta estratégica para la dirección del negocio.
+              Cada bloque de la asesoría está pensado para liberar tiempo
+              operativo, reducir contingencias y convertir la contabilidad en
+              una herramienta estratégica para la dirección del negocio.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
@@ -120,8 +129,12 @@ export default function AccountingAdvisoryPage() {
                 key={benefit.title}
                 className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-indigo-100/40"
               >
-                <h3 className="text-lg font-semibold text-slate-900">{benefit.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{benefit.description}</p>
+                <h3 className="text-lg font-semibold text-slate-900">
+                  {benefit.title}
+                </h3>
+                <p className="mt-3 text-sm text-slate-600">
+                  {benefit.description}
+                </p>
               </article>
             ))}
           </div>
@@ -132,13 +145,16 @@ export default function AccountingAdvisoryPage() {
           className="rounded-3xl bg-gradient-to-r from-white via-slate-50 to-white/70 p-8 shadow-inner shadow-white/40"
         >
           <div className="border-b border-slate-200 pb-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Servicios incluidos</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+              Servicios incluidos
+            </p>
             <h2 className="mt-3 text-2xl font-semibold text-slate-900 lg:text-3xl">
               Todo lo que necesitas para una contabilidad confiable
             </h2>
             <p className="mt-4 text-base text-slate-600">
-              Cubrimos la operación diaria y los análisis avanzados para que la información financiera llegue depurada, a tiempo
-              y alineada a las normas contables vigentes.
+              Cubrimos la operación diaria y los análisis avanzados para que la
+              información financiera llegue depurada, a tiempo y alineada a las
+              normas contables vigentes.
             </p>
           </div>
 
@@ -146,7 +162,10 @@ export default function AccountingAdvisoryPage() {
             <div className="space-y-4">
               {includedServices.slice(0, 5).map((service) => (
                 <div key={service} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-indigo-500" aria-hidden />
+                  <span
+                    className="mt-1 h-2 w-2 rounded-full bg-indigo-500"
+                    aria-hidden
+                  />
                   <p className="text-sm text-slate-600">{service}</p>
                 </div>
               ))}
@@ -154,7 +173,10 @@ export default function AccountingAdvisoryPage() {
             <div className="space-y-4">
               {includedServices.slice(5).map((service) => (
                 <div key={service} className="flex items-start gap-3">
-                  <span className="mt-1 h-2 w-2 rounded-full bg-purple-500" aria-hidden />
+                  <span
+                    className="mt-1 h-2 w-2 rounded-full bg-purple-500"
+                    aria-hidden
+                  />
                   <p className="text-sm text-slate-600">{service}</p>
                 </div>
               ))}
@@ -178,19 +200,7 @@ export default function AccountingAdvisoryPage() {
           </div>
         </section>
 
-        <section id="contacto" className="rounded-3xl border border-slate-200 bg-white/70 p-6">
-          <p className="text-sm font-semibold text-slate-900">¿Necesitas hablar con un especialista?</p>
-          <p className="mt-2 text-sm text-slate-600">
-            Escríbenos a supervisor@partner-accounting.cl o agenda una llamada desde la página principal para coordinar una
-            revisión detallada de tus requerimientos contables.
-          </p>
-          <Link
-            href="/"
-            className="mt-4 inline-flex items-center rounded-full bg-slate-900/90 px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition hover:-translate-y-0.5"
-          >
-            Volver a la landing principal
-          </Link>
-        </section>
+        <ContactSection />
       </main>
 
       <Footer />
