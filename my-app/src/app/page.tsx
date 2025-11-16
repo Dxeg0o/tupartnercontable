@@ -112,9 +112,9 @@ const serviceModes = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">
-        <Navigation navigation={navigation} />
+      <Navigation navigation={navigation} />
 
+      <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">
         <HeroSection />
 
         <ServicesSection services={services} />
@@ -128,7 +128,7 @@ export default function Home() {
         <ModalidadesSection serviceModes={serviceModes} />
 
         <ContactSection />
-      </div>
+      </main>
       <Footer />
     </div>
   );
