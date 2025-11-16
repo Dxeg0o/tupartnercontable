@@ -1,3 +1,4 @@
+import { ContactSection } from "./components/ContactSection";
 import { FAQSection } from "./components/FAQSection";
 import { HeroSection } from "./components/HeroSection";
 import { ModalidadesSection } from "./components/ModalidadesSection";
@@ -124,6 +125,8 @@ export default function Home() {
         <FAQSection />
 
         <ModalidadesSection serviceModes={serviceModes} />
+
+        <ContactSection />
       </div>
     </div>
   );
