@@ -14,6 +14,7 @@ const navigation = [
   { label: "Asesoría en Recursos Humanos", href: "#rrhh" },
   { label: "Empresas", href: "#empresas" },
   { label: "Preguntas", href: "#faq" },
+  { label: "Detalle Servicio", href: "/asesoria-contable" },
 ];
 
 const services = [

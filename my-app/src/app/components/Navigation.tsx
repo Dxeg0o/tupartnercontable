@@ -7,13 +7,14 @@ interface NavigationItem {
 
 interface NavigationProps {
   navigation: NavigationItem[];
+  homeHref?: string;
 }
 
-export function Navigation({ navigation }: NavigationProps) {
+export function Navigation({ navigation, homeHref = "#inicio" }: NavigationProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/30 bg-white/80 shadow-[0_4px_30px_rgba(15,23,42,0.05)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="#inicio" className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
+        <Link href={homeHref} className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
           <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-purple-500 text-lg font-semibold text-white shadow-lg">
             PA
           </span>
