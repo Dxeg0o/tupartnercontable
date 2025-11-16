@@ -6,6 +6,7 @@ import { Navigation } from "./components/Navigation";
 import { ProcessSection } from "./components/ProcessSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
+import { Footer } from "./components/Footer";
 
 const navigation = [
   { label: "Asesoría Contable", href: "#servicios" },
@@ -128,6 +129,8 @@ export default function Home() {
 
         <ContactSection />
       </div>
+
+      <Footer />
     </div>
   );
 }
