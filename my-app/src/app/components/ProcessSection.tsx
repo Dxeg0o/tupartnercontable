@@ -12,7 +12,7 @@ interface ProcessSectionProps {
 
 export function ProcessSection({ steps }: ProcessSectionProps) {
   return (
-    <section className="mt-28 space-y-16" aria-labelledby="proceso-heading">
+    <section id="proceso" className="mt-28 space-y-16" aria-labelledby="proceso-heading">
       <div className="flex flex-col gap-6 text-center">
         <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
           <span className="h-2 w-2 rounded-full bg-indigo-500" />
