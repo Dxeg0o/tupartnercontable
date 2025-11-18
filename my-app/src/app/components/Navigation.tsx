@@ -13,7 +13,7 @@ export function Navigation({ navigation }: NavigationProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-white/30 bg-white/80 shadow-[0_4px_30px_rgba(15,23,42,0.05)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="#inicio" className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
+        <Link href="/" className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
           <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-purple-500 text-lg font-semibold text-white shadow-lg">
             PA
           </span>
@@ -41,7 +41,7 @@ export function Navigation({ navigation }: NavigationProps) {
             href="#contacto"
             className="hidden rounded-full bg-slate-900/90 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition-all hover:translate-y-0.5 hover:bg-slate-900 lg:inline-flex"
           >
-            Agenda una llamada
+            Conversemos
           </Link>
           <button
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-indigo-200 hover:text-indigo-600 lg:hidden"
