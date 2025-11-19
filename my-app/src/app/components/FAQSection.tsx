@@ -31,7 +31,7 @@ const faqs = [
 ];
 
 export function FAQSection() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section
@@ -63,21 +63,28 @@ export function FAQSection() {
           </a>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-5">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
 
             return (
               <div
                 key={faq.question}
-                className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-indigo-100"
+                className={`overflow-hidden rounded-2xl border bg-white/90 shadow-lg shadow-indigo-100/60 transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-200/80 hover:shadow-xl ${
+                  isOpen ? "border-indigo-200" : "border-slate-200"
+                }`}
               >
                 <button
                   type="button"
-                  onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
                   className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left"
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${index}`}
                 >
-                  <span className="text-base font-semibold text-slate-900">{faq.question}</span>
+                  <span className="flex items-start gap-3 text-base font-semibold text-slate-900">
+                    <span className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-indigo-500" aria-hidden />
+                    <span className="flex-1 leading-snug">{faq.question}</span>
+                  </span>
                   <span
                     className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition ${
                       isOpen ? "bg-indigo-600 text-white border-indigo-500" : "bg-white"
@@ -99,11 +106,21 @@ export function FAQSection() {
                     </svg>
                   </span>
                 </button>
-                {isOpen && (
-                  <div className="border-t border-slate-100 bg-slate-50/70 px-6 pb-6 pt-2 text-sm leading-relaxed text-slate-600">
+                <div
+                  id={`faq-answer-${index}`}
+                  className={`border-t border-slate-100 bg-gradient-to-br from-slate-50/90 via-white to-slate-50/90 px-6 text-sm leading-relaxed text-slate-600 transition-all duration-500 ease-out ${
+                    isOpen ? "pb-6 pt-2 opacity-100" : "pb-0 pt-0 opacity-0"
+                  }`}
+                  style={{ maxHeight: isOpen ? "320px" : "0px" }}
+                >
+                  <p
+                    className={`transform text-[0.95rem] transition-all duration-500 ${
+                      isOpen ? "translate-y-0" : "-translate-y-2"
+                    }`}
+                  >
                     {faq.answer}
-                  </div>
-                )}
+                  </p>
+                </div>
               </div>
             );
           })}
