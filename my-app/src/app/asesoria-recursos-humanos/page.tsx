@@ -79,6 +79,30 @@ const hrHighlights = [
   "Integración con tus plataformas actuales",
 ];
 
+const heroHighlights = [
+  "Nóminas sin reprocesos ni atrasos",
+  "Compliance laboral respaldado",
+  "Soporte confidencial y cercano",
+];
+
+const deliverySteps = [
+  {
+    title: "Levantamiento y migración",
+    description:
+      "Revisamos contratos, beneficios y formatos de nómina para diseñar un aterrizaje sin interrupciones.",
+  },
+  {
+    title: "Ciclos mensuales",
+    description:
+      "Liquidamos sueldos, validamos variaciones y publicamos reportes ejecutivos con indicadores accionables.",
+  },
+  {
+    title: "Soporte continuo",
+    description:
+      "Respondemos consultas laborales, preparamos documentación y acompañamos inspecciones o auditorías.",
+  },
+];
+
 export default function HumanResourcesAdvisoryPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
@@ -86,43 +110,64 @@ export default function HumanResourcesAdvisoryPage() {
 
       <main
         id="inicio"
-        className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-20 pt-10 lg:px-8"
+        className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-24 pt-12 lg:px-8"
       >
         <section
           id="descripcion"
-          className="rounded-3xl bg-white/80 p-8 shadow-xl shadow-slate-900/5 ring-1 ring-slate-100"
+          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-indigo-50 to-purple-50 p-10 shadow-2xl shadow-indigo-100/50 ring-1 ring-slate-100 lg:p-12"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500">
-            Asesoría en Recursos Humanos
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold text-slate-900 lg:text-4xl">
-            Optimiza tus procesos de nómina y cumple con la normativa laboral
-          </h1>
-          <p className="mt-6 text-base text-slate-600">
-            En Partner-Accounting te ofrecemos un servicio integral de gestión de remuneraciones y asesoría laboral, diseñado para
-            ayudarte a cumplir con tus obligaciones legales, optimizar tus costos laborales y mejorar la relación con tus empleados.
-            Nuestro equipo de expertos te acompañará en cada paso del proceso, garantizando la precisión y confidencialidad de toda la
-            información.
-          </p>
-          <p className="mt-4 text-base text-slate-600">
-            Nuestras asesorías en recursos humanos abarcan todo el ciclo de vida laboral de tus empleados, desde su incorporación hasta
-            su retiro. Te brindamos un servicio integral que incluye la gestión de nóminas, el cumplimiento de las obligaciones
-            laborales y previsionales, y el asesoramiento en temas relacionados con relaciones laborales, con el objetivo de optimizar
-            tus procesos y garantizar el bienestar de tu equipo.
-          </p>
-          <div className="mt-8 grid gap-6 border-t border-slate-100 pt-6 sm:grid-cols-2">
-            <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Cómo trabajamos</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Levantamos tus procesos actuales, definimos puntos de control y configuramos flujos digitales para asegurar un traspaso
-                ordenado y sin interrupciones operativas.
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.08),transparent_35%)]" />
+          <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="space-y-6">
+              <p className="inline-flex items-center rounded-full bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-indigo-600 ring-1 ring-indigo-100">
+                Asesoría en Recursos Humanos
               </p>
+              <div className="space-y-3">
+                <h1 className="text-3xl font-semibold leading-tight text-slate-900 lg:text-4xl">
+                  Optimiza la nómina, protege a tu equipo y cumple sin sobresaltos
+                </h1>
+                <p className="text-base text-slate-600">
+                  Gestionamos remuneraciones, contratos y obligaciones laborales con precisión y confidencialidad. Nuestro acompañamiento libera a tu equipo de reprocesos y asegura una experiencia impecable para cada colaborador.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {heroHighlights.map((item) => (
+                  <span
+                    key={item}
+                    className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs font-semibold text-slate-700 ring-1 ring-slate-200"
+                  >
+                    <span aria-hidden className="text-indigo-500">●</span>
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-200 transition hover:-translate-y-0.5 hover:bg-indigo-700"
+                >
+                  Coordinar una llamada
+                </a>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-600">
+                  <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
+                  Protocolos de nómina listos desde el primer ciclo
+                </span>
+              </div>
             </div>
-            <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Resultados esperados</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Nóminas confiables, colaboradores informados y una operación que cumple con cada hito legal sin sorpresas ni multas.
-              </p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {["Liquidación mensual", "Gestión contractual", "Asesoría laboral", "Analítica de personas"].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-md shadow-slate-200/30 backdrop-blur"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">Entrega</p>
+                  <p className="mt-2 text-sm font-semibold text-slate-900">{item}</p>
+                  <p className="mt-1 text-xs text-slate-600">
+                    Checklist compartido, responsables definidos y trazabilidad de cada documento.
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -142,8 +187,9 @@ export default function HumanResourcesAdvisoryPage() {
             {benefits.map((benefit) => (
               <article
                 key={benefit.title}
-                className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-indigo-100/40"
+                className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-indigo-100/50"
               >
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-400 to-indigo-500" />
                 <h3 className="text-lg font-semibold text-slate-900">{benefit.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{benefit.description}</p>
               </article>
@@ -168,7 +214,7 @@ export default function HumanResourcesAdvisoryPage() {
 
           <div className="mt-8 grid gap-8 lg:grid-cols-3">
             {serviceCategories.map((category) => (
-              <article key={category.title} className="rounded-2xl border border-slate-100 bg-white/80 p-6">
+              <article key={category.title} className="rounded-2xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-200/40">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-400">{category.title}</p>
                 <p className="mt-3 text-sm text-slate-600">{category.intro}</p>
                 <ul className="mt-5 space-y-3 text-sm text-slate-600">
@@ -193,10 +239,40 @@ export default function HumanResourcesAdvisoryPage() {
               {hrHighlights.map((highlight) => (
                 <span
                   key={highlight}
-                  className="inline-flex items-center rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-600"
+                  className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700"
                 >
+                  <span aria-hidden className="text-indigo-500">◆</span>
                   {highlight}
                 </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-3xl bg-white/90 p-8 shadow-xl shadow-indigo-50 ring-1 ring-slate-100">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Metodología</p>
+              <h2 className="text-2xl font-semibold text-slate-900 lg:text-3xl">Operación continua, con foco en la experiencia</h2>
+              <p className="text-base text-slate-600">
+                Definimos un calendario compartido con cut-off claros, responsables por área y controles automáticos que permiten detectar inconsistencias antes de cerrar cada ciclo de nómina.
+              </p>
+              <a
+                href="#contacto"
+                className="inline-flex items-center justify-center rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 transition hover:-translate-y-0.5 hover:border-indigo-300"
+              >
+                Revisa nuestro plan de acción
+              </a>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {deliverySteps.map((step) => (
+                <div
+                  key={step.title}
+                  className="flex h-full flex-col rounded-2xl bg-gradient-to-b from-slate-50 to-white p-4 shadow-lg shadow-slate-100"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{step.title}</p>
+                  <p className="mt-2 text-xs text-slate-600">{step.description}</p>
+                </div>
               ))}
             </div>
           </div>

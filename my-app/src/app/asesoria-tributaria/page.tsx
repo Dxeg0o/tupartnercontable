@@ -80,6 +80,30 @@ const managementHighlights = [
   "Acompañamiento estratégico en decisiones de inversión",
 ];
 
+const heroHighlights = [
+  "Defensa y representación ante el SII",
+  "Estrategia fiscal alineada al negocio",
+  "Alertas tempranas de cumplimiento",
+];
+
+const deliverySteps = [
+  {
+    title: "Diagnóstico tributario",
+    description:
+      "Revisamos tu operación, riesgos y oportunidades para definir la estrategia fiscal anual.",
+  },
+  {
+    title: "Ejecución mensual",
+    description:
+      "Calculamos impuestos, presentamos declaraciones y monitoreamos cambios normativos relevantes.",
+  },
+  {
+    title: "Acompañamiento y defensa",
+    description:
+      "Preparamos expedientes, respondemos fiscalizaciones y te representamos frente al SII.",
+  },
+];
+
 export default function TaxAdvisoryPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
@@ -87,42 +111,64 @@ export default function TaxAdvisoryPage() {
 
       <main
         id="inicio"
-        className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-20 pt-10 lg:px-8"
+        className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-24 pt-12 lg:px-8"
       >
         <section
           id="descripcion"
-          className="rounded-3xl bg-white/80 p-8 shadow-xl shadow-slate-900/5 ring-1 ring-slate-100"
+          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white via-indigo-50 to-purple-50 p-10 shadow-2xl shadow-indigo-100/50 ring-1 ring-slate-100 lg:p-12"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-indigo-500">
-            Asesoría Tributaria
-          </p>
-          <h1 className="mt-4 text-3xl font-semibold text-slate-900 lg:text-4xl">
-            Optimiza tu carga tributaria y maximiza tus beneficios
-          </h1>
-          <p className="mt-6 text-base text-slate-600">
-            En Partner-Accounting te ofrecemos un servicio de asesoría tributaria integral, diseñado para ayudarte a cumplir con tus
-            obligaciones fiscales, optimizar tu carga tributaria y tomar decisiones financieras estratégicas. Nuestro equipo te acompaña
-            en cada paso, garantizando el cumplimiento normativo y brindándote la información necesaria para decidir con confianza.
-          </p>
-          <p className="mt-4 text-base text-slate-600">
-            Nuestras asesorías tributarias te brindan la tranquilidad de cumplir con todas tus obligaciones de manera eficiente y oportuna.
-            Te guiamos desde la planificación hasta la presentación de tus declaraciones, asegurándonos de que estés al día con las
-            últimas normativas y aproveches al máximo las oportunidades de optimización fiscal.
-          </p>
-          <div className="mt-8 grid gap-6 border-t border-slate-100 pt-6 sm:grid-cols-2">
-            <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Nuestro enfoque</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Analizamos tu operación, tus contratos y proyecciones para diseñar una estrategia tributaria personalizada que reduzca la
-                carga impositiva sin descuidar el cumplimiento.
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(99,102,241,0.08),transparent_35%)]" />
+          <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div className="space-y-6">
+              <p className="inline-flex items-center rounded-full bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-indigo-600 ring-1 ring-indigo-100">
+                Asesoría Tributaria
               </p>
+              <div className="space-y-3">
+                <h1 className="text-3xl font-semibold leading-tight text-slate-900 lg:text-4xl">
+                  Optimiza tu carga tributaria y toma decisiones con claridad
+                </h1>
+                <p className="text-base text-slate-600">
+                  Diseñamos estrategias fiscales, ejecutamos declaraciones y te acompañamos en fiscalizaciones con documentación impecable. Conectamos los números de tu negocio con decisiones tributarias oportunas.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                {heroHighlights.map((item) => (
+                  <span
+                    key={item}
+                    className="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-xs font-semibold text-slate-700 ring-1 ring-slate-200"
+                  >
+                    <span aria-hidden className="text-indigo-500">●</span>
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#contacto"
+                  className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-200 transition hover:-translate-y-0.5 hover:bg-indigo-700"
+                >
+                  Agendar una sesión
+                </a>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-slate-600">
+                  <span className="h-2 w-2 rounded-full bg-emerald-400" aria-hidden />
+                  Declaraciones listas y defendibles
+                </span>
+              </div>
             </div>
-            <div className="rounded-2xl bg-slate-50/80 p-5">
-              <p className="text-sm font-semibold text-slate-500">Resultados esperados</p>
-              <p className="mt-2 text-sm text-slate-600">
-                Declaraciones impecables, documentación lista para fiscalizaciones y claridad total sobre cómo afectan los impuestos a tu
-                rentabilidad.
-              </p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {["Planificación fiscal", "Declaraciones mensuales", "Defensa tributaria", "Informes ejecutivos"].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-white/70 bg-white/80 p-4 shadow-md shadow-slate-200/30 backdrop-blur"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">Entrega</p>
+                  <p className="mt-2 text-sm font-semibold text-slate-900">{item}</p>
+                  <p className="mt-1 text-xs text-slate-600">
+                    Documentación clara, responsables designados y seguimiento semanal de hitos.
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -142,8 +188,9 @@ export default function TaxAdvisoryPage() {
             {benefits.map((benefit) => (
               <article
                 key={benefit.title}
-                className="rounded-3xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-indigo-100/40"
+                className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-lg shadow-indigo-100/50"
               >
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-indigo-500 via-purple-400 to-indigo-500" />
                 <h3 className="text-lg font-semibold text-slate-900">{benefit.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{benefit.description}</p>
               </article>
@@ -168,7 +215,7 @@ export default function TaxAdvisoryPage() {
 
           <div className="mt-8 grid gap-8 lg:grid-cols-3">
             {serviceCategories.map((category) => (
-              <article key={category.title} className="rounded-2xl border border-slate-100 bg-white/80 p-6">
+              <article key={category.title} className="rounded-2xl border border-slate-100 bg-white/80 p-6 shadow-lg shadow-slate-200/40">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-400">{category.title}</p>
                 <p className="mt-3 text-sm text-slate-600">{category.intro}</p>
                 <ul className="mt-5 space-y-3 text-sm text-slate-600">
@@ -189,10 +236,40 @@ export default function TaxAdvisoryPage() {
               {managementHighlights.map((highlight) => (
                 <span
                   key={highlight}
-                  className="inline-flex items-center rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-600"
+                  className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-700"
                 >
+                  <span aria-hidden className="text-indigo-500">◆</span>
                   {highlight}
                 </span>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-3xl bg-white/90 p-8 shadow-xl shadow-indigo-50 ring-1 ring-slate-100">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div className="space-y-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Metodología</p>
+              <h2 className="text-2xl font-semibold text-slate-900 lg:text-3xl">Orden tributario permanente y defendible</h2>
+              <p className="text-base text-slate-600">
+                Priorizamos la trazabilidad: cada cálculo, formulario y declaración queda respaldado con evidencias y responsables. Así enfrentamos fiscalizaciones con confianza y anticipamos oportunidades de ahorro.
+              </p>
+              <a
+                href="#contacto"
+                className="inline-flex items-center justify-center rounded-xl border border-indigo-200 bg-indigo-50 px-4 py-2 text-sm font-semibold text-indigo-700 transition hover:-translate-y-0.5 hover:border-indigo-300"
+              >
+                Revisar calendario tributario
+              </a>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {deliverySteps.map((step) => (
+                <div
+                  key={step.title}
+                  className="flex h-full flex-col rounded-2xl bg-gradient-to-b from-slate-50 to-white p-4 shadow-lg shadow-slate-100"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{step.title}</p>
+                  <p className="mt-2 text-xs text-slate-600">{step.description}</p>
+                </div>
               ))}
             </div>
           </div>
