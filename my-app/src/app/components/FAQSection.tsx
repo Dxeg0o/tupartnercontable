@@ -37,7 +37,15 @@ export function FAQSection() {
 
   useEffect(() => {
     const updateHeights = () => {
-      setContentHeights(contentRefs.current.map((ref) => ref?.scrollHeight ?? 0));
+      setContentHeights(
+        contentRefs.current.map((ref) => {
+          const innerContent = ref?.querySelector<HTMLElement>("[data-faq-content]");
+          const contentHeight = innerContent?.scrollHeight ?? 0;
+          const verticalPadding = 32; // py-4 on open state
+
+          return contentHeight + verticalPadding;
+        })
+      );
     };
 
     updateHeights();
@@ -124,10 +132,10 @@ export function FAQSection() {
                   }}
                   style={{ maxHeight: isOpen ? `${contentHeights[index] ?? 0}px` : "0px" }}
                   className={`grid overflow-hidden border-t border-slate-100 bg-slate-50/70 px-6 text-base text-slate-600 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-                    isOpen ? "grid-rows-[1fr] opacity-100 py-4" : "grid-rows-[0fr] opacity-0"
+                    isOpen ? "grid-rows-[1fr] opacity-100 py-4" : "grid-rows-[0fr] opacity-0 py-0"
                   }`}
                 >
-                  <div className="min-h-0 leading-relaxed">
+                  <div className="min-h-0 leading-relaxed" data-faq-content>
                     {faq.answer}
                   </div>
                 </div>
