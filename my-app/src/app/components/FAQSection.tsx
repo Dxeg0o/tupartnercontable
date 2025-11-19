@@ -36,8 +36,11 @@ export function FAQSection() {
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    const paddingOffset = 32; // Account for vertical padding added when the accordion is open
     const updateHeights = () => {
-      setContentHeights(contentRefs.current.map((ref) => ref?.scrollHeight ?? 0));
+      setContentHeights(
+        contentRefs.current.map((ref) => (ref ? ref.scrollHeight + paddingOffset : 0))
+      );
     };
 
     updateHeights();
