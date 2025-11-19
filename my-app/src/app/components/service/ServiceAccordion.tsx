@@ -40,7 +40,7 @@ export function ServiceAccordion({
   categories,
   highlights,
 }: ServiceAccordionProps) {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section className="rounded-3xl bg-gradient-to-r from-white via-slate-50 to-white/70 p-8 shadow-inner shadow-white/40">
@@ -50,27 +50,29 @@ export function ServiceAccordion({
         <p className="mt-4 text-base text-slate-600">{description}</p>
       </div>
 
-      <div className="mt-6 divide-y divide-slate-200">
+      <div className="mt-6 space-y-3">
         {categories.map((category, index) => {
           const isOpen = openIndex === index;
           return (
-            <div key={category.title} className="py-4">
+            <article
+              key={category.title}
+              className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white/80 backdrop-blur-sm transition hover:border-indigo-200"
+            >
               <button
                 type="button"
-                className="flex w-full items-center justify-between gap-4 text-left"
-                onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+                onClick={() => setOpenIndex(isOpen ? null : index)}
                 aria-expanded={isOpen}
               >
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-400">
-                    {category.title}
-                  </p>
-                  <p className="mt-2 text-sm text-slate-600">{category.intro}</p>
+                <div className="space-y-1">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{category.title}</p>
+                  <p className="text-base font-semibold text-slate-900 lg:text-lg">{category.intro}</p>
                 </div>
                 <span
-                  className={`flex h-10 w-10 items-center justify-center rounded-full border border-indigo-100 bg-white text-indigo-600 transition ${
-                    isOpen ? "rotate-45" : ""
+                  className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-transform duration-300 ${
+                    isOpen ? "rotate-180" : "rotate-0"
                   }`}
+                  aria-hidden
                 >
                   <svg
                     className="h-4 w-4"
@@ -80,24 +82,32 @@ export function ServiceAccordion({
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    aria-hidden
                   >
-                    <path d="M12 5v14M5 12h14" />
+                    <path d="m6 9 6 6 6-6" />
                   </svg>
                 </span>
               </button>
 
-              {isOpen ? (
-                <ul className="mt-4 space-y-3 text-sm text-slate-600">
-                  {category.items.map((item) => (
-                    <li key={item} className="flex items-start gap-3 rounded-xl bg-white/70 p-3 ring-1 ring-slate-100">
-                      <CheckIcon />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </div>
+              <div
+                className={`px-5 transition-all duration-500 ease-out ${
+                  isOpen ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="pb-5 pt-1">
+                  <ul className="space-y-3 text-sm text-slate-700 lg:text-base">
+                    {category.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/70 p-3 shadow-sm"
+                      >
+                        <CheckIcon />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </article>
           );
         })}
       </div>
