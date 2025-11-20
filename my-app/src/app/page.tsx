@@ -107,7 +107,7 @@ export default function Home() {
     <div className="min-h-screen bg-[linear-gradient(180deg,#FFFFFF,#E6E6E6)]">
       <Navigation navigation={landingNavigation} />
 
-      <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">
+      <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-6 lg:px-8">
         <HeroSection />
 
         <ServicesSection services={services} />
