@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.tupartnercontable.cl"),
+  metadataBase: new URL("https://tupartnercontable.vercel.app"),
   alternates: {
     canonical: "/",
   },
