@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 type Testimonial = {
   companyLogo: string;
@@ -51,6 +51,14 @@ export function TestimonialsCarousel() {
     setActiveIndex(normalized);
   };
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      goTo(activeIndex + 1);
+    }, 10000);
+
+    return () => clearInterval(timer);
+  }, [activeIndex]);
+
   return (
     <section
       className="relative mt-28 flex flex-col items-center gap-10"
@@ -75,29 +83,33 @@ export function TestimonialsCarousel() {
       </div>
 
       <div className="relative w-full max-w-4xl">
-        <div className="rounded-[2.75rem] border border-[#E6E6E6] bg-white/85 p-10 text-center shadow-2xl shadow-[0_18px_46px_rgba(53,113,223,0.16)]">
-          <div className="flex justify-center">
-            <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-[#E6E6E6] bg-[#6A9AFA1A]">
-              <Image
-                src={activeTestimonial.companyLogo}
-                alt={activeTestimonial.companyAlt}
-                width={80}
-                height={80}
-                className="h-20 w-20 object-cover"
-              />
-            </span>
-          </div>
-          <blockquote className="mt-8 space-y-6">
-            <p className="text-lg italic leading-relaxed text-[#5A5A5A]">
-              “{activeTestimonial.quote}”
-            </p>
-            <footer className="space-y-1">
-              <p className="text-base font-semibold text-[#1F1F1F]">
-                {activeTestimonial.author}
+        <div className="relative overflow-hidden rounded-[2.75rem] border border-[#E6E6E6] bg-white/85 p-10 text-center shadow-2xl shadow-[0_18px_46px_rgba(53,113,223,0.16)]">
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/90 via-white to-[#6A9AFA0D]" />
+
+          <div key={activeIndex} className="relative space-y-8 animate-testimonial">
+            <div className="flex justify-center">
+              <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-[#E6E6E6] bg-[#6A9AFA1A] shadow-[0_10px_30px_rgba(53,113,223,0.18)] animate-logo">
+                <Image
+                  src={activeTestimonial.companyLogo}
+                  alt={activeTestimonial.companyAlt}
+                  width={80}
+                  height={80}
+                  className="h-20 w-20 object-cover"
+                />
+              </span>
+            </div>
+            <blockquote className="space-y-6">
+              <p className="text-lg italic leading-relaxed text-[#5A5A5A]">
+                “{activeTestimonial.quote}”
               </p>
-              <p className="text-sm text-[#5A5A5A]">{activeTestimonial.role}</p>
-            </footer>
-          </blockquote>
+              <footer className="space-y-1">
+                <p className="text-base font-semibold text-[#1F1F1F]">
+                  {activeTestimonial.author}
+                </p>
+                <p className="text-sm text-[#5A5A5A]">{activeTestimonial.role}</p>
+              </footer>
+            </blockquote>
+          </div>
         </div>
 
         <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-4 rounded-full border border-[#E6E6E6] bg-white/90 px-4 py-2 shadow-lg shadow-[0_12px_28px_rgba(53,113,223,0.14)] backdrop-blur">
@@ -161,6 +173,42 @@ export function TestimonialsCarousel() {
           </button>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeSlide {
+          0% {
+            opacity: 0;
+            transform: translateY(16px) scale(0.98);
+            filter: blur(4px);
+          }
+          60% {
+            filter: blur(0);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        @keyframes logoReveal {
+          0% {
+            opacity: 0;
+            transform: translateY(8px) scale(0.9);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+          }
+        }
+
+        .animate-testimonial {
+          animation: fadeSlide 800ms cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+        }
+
+        .animate-logo {
+          animation: logoReveal 750ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+      `}</style>
     </section>
   );
 }
