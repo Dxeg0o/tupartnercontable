@@ -103,7 +103,7 @@ export function TestimonialsCarousel() {
                 “{activeTestimonial.quote}”
               </p>
               <footer className="space-y-1">
-                <p className="text-base font-semibold text-[#1F1F1F]">
+                <p className="text-base font-semibold text-[#092961]">
                   {activeTestimonial.author}
                 </p>
                 <p className="text-sm text-[#5A5A5A]">{activeTestimonial.role}</p>

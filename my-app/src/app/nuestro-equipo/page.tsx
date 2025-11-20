@@ -20,7 +20,7 @@ export default function NuestroEquipo() {
             <span className="h-2 w-2 rounded-full bg-[#F4621D]" />
             Capital Humano
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-[#1F1F1F] sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold tracking-tight text-[#092961] sm:text-5xl lg:text-6xl">
             Expertos comprometidos con
             <br className="hidden lg:block" />
             <span className="text-[#3571DF]">tu crecimiento empresarial</span>
@@ -44,7 +44,7 @@ export default function NuestroEquipo() {
             </div>
             <div className="space-y-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold text-[#1F1F1F] lg:text-4xl">Andrés Cabrera</h2>
+                <h2 className="text-3xl font-bold text-[#092961] lg:text-4xl">Andrés Cabrera</h2>
                 <p className="text-lg font-medium text-[#3571DF]">Founder & CEO</p>
               </div>
 
@@ -67,7 +67,7 @@ export default function NuestroEquipo() {
               </div>
 
               <div className="inline-block border-l-4 border-[#F4621D] pl-5">
-                <p className="text-lg font-medium italic text-[#1F1F1F]">
+                <p className="text-lg font-medium italic text-[#092961]">
                   &ldquo;No solo llevamos tus números, interpretamos tu negocio para impulsarlo al siguiente nivel.&rdquo;
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default function NuestroEquipo() {
         <section className="grid items-center gap-12 lg:grid-cols-2 lg:gap-14">
           <div className="space-y-8">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold text-[#1F1F1F] lg:text-4xl">Nuestra Cultura</h2>
+              <h2 className="text-3xl font-bold text-[#092961] lg:text-4xl">Nuestra Cultura</h2>
               <p className="leading-relaxed text-[#5A5A5A]">
                 Más que un equipo, somos un ecosistema de profesionales unidos por valores sólidos y un propósito común: la excelencia en el servicio.
               </p>
@@ -129,7 +129,7 @@ export default function NuestroEquipo() {
                     {value.icon}
                   </div>
                   <div>
-                    <h3 className="mb-1 font-bold text-[#1F1F1F]">{value.title}</h3>
+                    <h3 className="mb-1 font-bold text-[#092961]">{value.title}</h3>
                     <p className="text-sm text-[#5A5A5A]">{value.desc}</p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ export default function NuestroEquipo() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#3571DF]/15 via-white to-[#F4621D]/15" />
             <div className="relative flex h-full items-center justify-center text-center text-[#5A5A5A]">
               <div className="rounded-2xl bg-white/80 px-6 py-4 shadow-md">
-                <span className="text-base font-semibold text-[#1F1F1F]">Foto grupal del equipo</span>
+                <span className="text-base font-semibold text-[#092961]">Foto grupal del equipo</span>
                 <p className="text-sm text-[#5A5A5A]">Próximamente</p>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function NuestroEquipo() {
         {/* Team Grid Section */}
         <section className="space-y-10">
           <div className="text-center space-y-3">
-            <h2 className="text-3xl font-bold text-[#1F1F1F] lg:text-4xl">Nuestro Talento</h2>
+            <h2 className="text-3xl font-bold text-[#092961] lg:text-4xl">Nuestro Talento</h2>
             <p className="text-[#5A5A5A]">Profesionales dedicados a tu tranquilidad financiera</p>
           </div>
 
@@ -170,7 +170,7 @@ export default function NuestroEquipo() {
                 </div>
                 <div className="space-y-3 px-7 py-6">
                   <div className="space-y-1">
-                    <h3 className="text-lg font-bold text-[#1F1F1F]">Nombre Apellido</h3>
+                    <h3 className="text-lg font-bold text-[#092961]">Nombre Apellido</h3>
                     <p className="text-sm font-semibold text-[#3571DF]">Cargo / Especialidad</p>
                   </div>
                   <p className="text-sm leading-relaxed text-[#5A5A5A]">

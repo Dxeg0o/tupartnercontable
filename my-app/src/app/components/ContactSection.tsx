@@ -49,7 +49,7 @@ export function ContactSection() {
             <dl className="mt-8 space-y-6 text-sm text-[#5A5A5A]">
               {contactDetails.map((detail) => (
                 <div key={detail.label} className="border-l-2 border-[#E6E6E6] pl-4">
-                  <dt className="font-medium uppercase tracking-wide text-[#1F1F1F]">
+                  <dt className="font-medium uppercase tracking-wide text-[#092961]">
                     {detail.label}
                   </dt>
                   {detail.href ? (
@@ -62,7 +62,7 @@ export function ContactSection() {
                       </a>
                     </dd>
                   ) : (
-                    <dd className="text-base font-semibold text-[#1F1F1F]">{detail.value}</dd>
+                    <dd className="text-base font-semibold text-[#092961]">{detail.value}</dd>
                   )}
                 </div>
               ))}

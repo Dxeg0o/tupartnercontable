@@ -43,7 +43,7 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
             <p className="text-xs font-semibold uppercase tracking-wide text-[#5A5A5A]">
               Satisfacción promedio
             </p>
-            <p className="mt-2 text-2xl font-bold text-[#1F1F1F]">98.9%</p>
+            <p className="mt-2 text-2xl font-bold text-[#092961]">98.9%</p>
             <p className="mt-1 text-xs text-[#5A5A5A]">
               Clientes nos recomiendan por la flexibilidad del servicio.
             </p>
@@ -96,7 +96,7 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
               </div>
               <div className="space-y-3">
                 <div className="space-y-1">
-                  <h3 className="text-xl font-semibold text-[#1F1F1F]">
+                  <h3 className="text-xl font-semibold text-[#092961]">
                     {mode.title}
                   </h3>
                   <p className="text-sm leading-relaxed text-[#5A5A5A]">

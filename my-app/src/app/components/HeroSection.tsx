@@ -10,7 +10,7 @@ export function HeroSection() {
           Santiago, Chile
         </div>
         <header className="space-y-6">
-          <h1 className="text-4xl font-bold tracking-tight text-[#3571DF] sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-[#092961] sm:text-5xl">
             Asesoría y Consultoría
             <span className="block text-[#3571DF]">
               Contable, Financiera &amp; Tributaria
@@ -36,14 +36,14 @@ export function HeroSection() {
         </div>
         <div className="grid gap-6 sm:grid-cols-2">
           <div className="rounded-3xl border border-[#E6E6E6] bg-white p-6 shadow-sm">
-            <p className="text-3xl font-semibold text-[#1F1F1F]">98.9%</p>
+            <p className="text-3xl font-semibold text-[#092961]">98.9%</p>
             <p className="mt-2 text-sm font-medium text-[#5A5A5A]">Satisfacción de clientes</p>
             <p className="mt-4 text-sm text-[#5A5A5A]">
               Nuestro equipo acompaña a más de 120 empresas y pymes en Latinoamérica.
             </p>
           </div>
           <div className="rounded-3xl border border-[#E6E6E6] bg-white p-6 shadow-sm">
-            <p className="text-3xl font-semibold text-[#1F1F1F]">20.5%</p>
+            <p className="text-3xl font-semibold text-[#092961]">20.5%</p>
             <p className="mt-2 text-sm font-medium text-[#5A5A5A]">Promedio de ahorro tributario</p>
             <p className="mt-4 text-sm text-[#5A5A5A]">
               Identificamos oportunidades para optimizar cargas impositivas y mejorar el flujo de caja.
@@ -67,7 +67,7 @@ export function HeroSection() {
 
           <div className="absolute left-2 top-10 w-36 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur sm:-left-16 sm:top-12 sm:w-40">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#5A5A5A]">Revenue Growth</p>
-            <p className="mt-2 text-2xl font-bold text-[#1F1F1F]">+36%</p>
+            <p className="mt-2 text-2xl font-bold text-[#092961]">+36%</p>
             <p className="mt-1 text-xs text-[#5A5A5A]">
               respecto al último trimestre.
             </p>
@@ -78,7 +78,7 @@ export function HeroSection() {
             <div className="mt-3 flex items-center gap-2">
               <div className="h-10 w-10 rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)]" />
               <div>
-                <p className="text-xl font-bold text-[#1F1F1F]">98.8%</p>
+                <p className="text-xl font-bold text-[#092961]">98.8%</p>
                 <p className="text-xs text-[#5A5A5A]">+4.1% vs. meta</p>
               </div>
             </div>

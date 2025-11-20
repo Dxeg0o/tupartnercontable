@@ -30,7 +30,7 @@ export function Navigation({ navigation }: NavigationProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#E6E6E6] bg-white/90 shadow-[0_4px_30px_rgba(53,113,223,0.08)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center text-[#1F1F1F] transition-colors hover:text-[#3571DF] my-4">
+        <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
           <Image
             src="/completo.png"
             alt="Tu Partner Contable logo"
@@ -63,7 +63,7 @@ export function Navigation({ navigation }: NavigationProps) {
           </Link>
           <button
             onClick={toggleMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E6E6E6] text-[#1F1F1F] transition-colors hover:bg-[#3571DF]/10 hover:text-[#3571DF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3571DF] lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E6E6E6] text-[#092961] transition-colors hover:bg-[#3571DF]/10 hover:text-[#3571DF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3571DF] lg:hidden"
             aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
@@ -110,7 +110,7 @@ export function Navigation({ navigation }: NavigationProps) {
             : "pointer-events-none scale-95 opacity-0 translate-y-2"
         }`}
       >
-        <nav className="flex flex-col divide-y divide-[#F0F0F0] p-4 text-base font-medium text-[#1F1F1F]">
+        <nav className="flex flex-col divide-y divide-[#F0F0F0] p-4 text-base font-medium text-[#092961]">
           {navigation.map((item) => (
             <Link
               key={item.label}

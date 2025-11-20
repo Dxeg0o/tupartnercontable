@@ -64,7 +64,7 @@ export function ServiceAccordion({
               >
                 <div className="space-y-1">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3571DF]">{category.title}</p>
-                  <p className="text-base font-semibold text-[#1F1F1F] lg:text-lg">{category.intro}</p>
+                  <p className="text-base font-semibold text-[#092961] lg:text-lg">{category.intro}</p>
                 </div>
                 <span
                   className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-[#E6E6E6] bg-white text-[#3571DF] shadow-sm transition-transform duration-300 ${

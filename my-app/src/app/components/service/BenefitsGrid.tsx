@@ -30,7 +30,7 @@ export function BenefitsGrid({ title, subtitle, description, benefits }: Benefit
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#6A9AFA1A] text-[#3571DF] ring-1 ring-[#6A9AFA]">
               {benefit.icon}
             </div>
-            <h3 className="mt-4 text-lg font-semibold text-[#1F1F1F]">{benefit.title}</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#092961]">{benefit.title}</h3>
             <p className="mt-3 text-sm text-[#5A5A5A]">{benefit.description}</p>
           </article>
         ))}
