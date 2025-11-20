@@ -57,27 +57,27 @@ export function TestimonialsCarousel() {
       aria-labelledby="testimonios-heading"
     >
       <div className="flex flex-col gap-4 text-center">
-        <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-indigo-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
-          <span className="h-2 w-2 rounded-full bg-indigo-500" />
+        <div className="mx-auto inline-flex items-center gap-2 rounded-full border border-[#E6E6E6] bg-[#6A9AFA1A] px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#3571DF]">
+          <span className="h-2 w-2 rounded-full bg-[#F4621D]" />
           Testimonios reales
         </div>
         <div className="space-y-3">
           <h2
             id="testimonios-heading"
-            className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+            className="text-3xl font-bold tracking-tight text-[#3571DF] sm:text-4xl"
           >
             Historias que impulsan nuestra asesoría
           </h2>
-          <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600">
+          <p className="mx-auto max-w-2xl text-base leading-relaxed text-[#5A5A5A]">
             Acompañamos a organizaciones creativas, retail y educación para que su gestión contable y tributaria sea un motor de crecimiento.
           </p>
         </div>
       </div>
 
       <div className="relative w-full max-w-4xl">
-        <div className="rounded-[2.75rem] border border-slate-200/80 bg-white/80 p-10 text-center shadow-2xl shadow-indigo-100/60">
+        <div className="rounded-[2.75rem] border border-[#E6E6E6] bg-white/85 p-10 text-center shadow-2xl shadow-[0_18px_46px_rgba(53,113,223,0.16)]">
           <div className="flex justify-center">
-            <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-indigo-100 bg-indigo-50">
+            <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-[#E6E6E6] bg-[#6A9AFA1A]">
               <Image
                 src={activeTestimonial.companyLogo}
                 alt={activeTestimonial.companyAlt}
@@ -88,23 +88,23 @@ export function TestimonialsCarousel() {
             </span>
           </div>
           <blockquote className="mt-8 space-y-6">
-            <p className="text-lg italic leading-relaxed text-slate-700">
+            <p className="text-lg italic leading-relaxed text-[#5A5A5A]">
               “{activeTestimonial.quote}”
             </p>
             <footer className="space-y-1">
-              <p className="text-base font-semibold text-slate-900">
+              <p className="text-base font-semibold text-[#1F1F1F]">
                 {activeTestimonial.author}
               </p>
-              <p className="text-sm text-slate-500">{activeTestimonial.role}</p>
+              <p className="text-sm text-[#5A5A5A]">{activeTestimonial.role}</p>
             </footer>
           </blockquote>
         </div>
 
-        <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-4 rounded-full border border-slate-200 bg-white/80 px-4 py-2 shadow-lg shadow-indigo-100/50 backdrop-blur">
+        <div className="absolute -bottom-8 left-1/2 flex -translate-x-1/2 items-center gap-4 rounded-full border border-[#E6E6E6] bg-white/90 px-4 py-2 shadow-lg shadow-[0_12px_28px_rgba(53,113,223,0.14)] backdrop-blur">
           <button
             type="button"
             onClick={() => goTo(activeIndex - 1)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:border-indigo-200 hover:text-indigo-600"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition hover:bg-[#3571DF]/20 hover:text-[#3571DF]"
             aria-label="Anterior testimonio"
           >
             <svg
@@ -130,8 +130,8 @@ export function TestimonialsCarousel() {
                 onClick={() => goTo(index)}
                 className={`h-2.5 rounded-full transition-all ${
                   index === activeIndex
-                    ? "w-8 bg-indigo-500"
-                    : "w-2.5 bg-slate-300 hover:bg-indigo-300"
+                    ? "w-8 bg-[#F4621D]"
+                    : "w-2.5 bg-[#E6E6E6] hover:bg-[#6A9AFA]"
                 }`}
                 aria-label={`Ir al testimonio ${index + 1}`}
                 aria-current={index === activeIndex}
@@ -141,7 +141,7 @@ export function TestimonialsCarousel() {
           <button
             type="button"
             onClick={() => goTo(activeIndex + 1)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition hover:border-indigo-200 hover:text-indigo-600"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition hover:bg-[#3571DF]/20 hover:text-[#3571DF]"
             aria-label="Siguiente testimonio"
           >
             <svg

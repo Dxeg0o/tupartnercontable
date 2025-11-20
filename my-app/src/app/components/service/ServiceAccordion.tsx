@@ -19,7 +19,7 @@ interface ServiceAccordionProps {
 function CheckIcon() {
   return (
     <svg
-      className="h-5 w-5 flex-none text-emerald-500"
+      className="h-5 w-5 flex-none text-[#F4621D]"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -43,11 +43,11 @@ export function ServiceAccordion({
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="rounded-3xl bg-gradient-to-r from-white via-slate-50 to-white/70 p-8 shadow-inner shadow-white/40">
-      <div className="border-b border-slate-200 pb-6">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">{eyebrow}</p>
-        <h2 className="mt-3 text-2xl font-semibold text-slate-900 lg:text-3xl">{title}</h2>
-        <p className="mt-4 text-base text-slate-600">{description}</p>
+    <section className="rounded-3xl bg-[linear-gradient(180deg,#FFFFFF,#E6E6E6)] p-8 shadow-inner shadow-[0_12px_28px_rgba(53,113,223,0.12)]">
+      <div className="border-b border-[#E6E6E6] pb-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3571DF]">{eyebrow}</p>
+        <h2 className="mt-3 text-2xl font-semibold text-[#3571DF] lg:text-3xl">{title}</h2>
+        <p className="mt-4 text-base text-[#5A5A5A]">{description}</p>
       </div>
 
       <div className="mt-6 space-y-3">
@@ -56,7 +56,7 @@ export function ServiceAccordion({
           return (
             <article
               key={category.title}
-              className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white/80 backdrop-blur-sm transition hover:border-indigo-200"
+              className="overflow-hidden rounded-2xl border border-[#E6E6E6] bg-white/90 backdrop-blur-sm transition hover:border-[#6A9AFA]"
             >
               <button
                 type="button"
@@ -65,11 +65,11 @@ export function ServiceAccordion({
                 aria-expanded={isOpen}
               >
                 <div className="space-y-1">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{category.title}</p>
-                  <p className="text-base font-semibold text-slate-900 lg:text-lg">{category.intro}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3571DF]">{category.title}</p>
+                  <p className="text-base font-semibold text-[#1F1F1F] lg:text-lg">{category.intro}</p>
                 </div>
                 <span
-                  className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition-transform duration-300 ${
+                  className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-[#E6E6E6] bg-white text-[#3571DF] shadow-sm transition-transform duration-300 ${
                     isOpen ? "rotate-180" : "rotate-0"
                   }`}
                   aria-hidden
@@ -94,11 +94,11 @@ export function ServiceAccordion({
                 }`}
               >
                 <div className="pb-5 pt-1">
-                  <ul className="space-y-3 text-sm text-slate-700 lg:text-base">
+                  <ul className="space-y-3 text-sm text-[#5A5A5A] lg:text-base">
                     {category.items.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-3 rounded-xl border border-slate-100 bg-slate-50/70 p-3 shadow-sm"
+                        className="flex items-start gap-3 rounded-xl border border-[#E6E6E6] bg-[#E6E6E6]/40 p-3 shadow-sm"
                       >
                         <CheckIcon />
                         <span>{item}</span>
@@ -113,15 +113,15 @@ export function ServiceAccordion({
       </div>
 
       {highlights?.length ? (
-        <div className="mt-8 rounded-2xl border border-dashed border-indigo-200 bg-white/60 p-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">Gestiones recurrentes</p>
+        <div className="mt-8 rounded-2xl border border-dashed border-[#3571DF] bg-white/80 p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#3571DF]">Gestiones recurrentes</p>
           <div className="mt-4 flex flex-wrap gap-3">
             {highlights.map((highlight) => (
               <span
                 key={highlight}
-                className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-600"
+                className="inline-flex items-center gap-2 rounded-full bg-[#E6E6E6] px-4 py-1.5 text-xs font-semibold text-[#5A5A5A]"
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-indigo-500" aria-hidden />
+                <span className="h-1.5 w-1.5 rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)]" aria-hidden />
                 {highlight}
               </span>
             ))}
