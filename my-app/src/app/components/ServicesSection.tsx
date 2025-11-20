@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface Service {
@@ -37,18 +38,24 @@ export function ServicesSection({ services }: ServicesSectionProps) {
             id={service.id}
             className="group flex h-full flex-col gap-6 rounded-[2rem] border border-[#E6E6E6] bg-white/80 p-8 text-left shadow-lg shadow-[0_10px_30px_rgba(53,113,223,0.12)] transition hover:-translate-y-1 hover:border-[#6A9AFA] hover:shadow-[0_16px_40px_rgba(244,98,29,0.2)]"
           >
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#3571DF,#F4621D)] text-white shadow-lg shadow-[0_10px_24px_rgba(53,113,223,0.25)]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.8"
-                className="h-6 w-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5l9-4.5 9 4.5-9 4.5-9-4.5z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5v9l9 4.5 9-4.5v-9" />
-              </svg>
+            <div className="flex items-start justify-between">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#3571DF,#F4621D)] text-white shadow-lg shadow-[0_10px_24px_rgba(53,113,223,0.25)]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  className="h-6 w-6"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5l9-4.5 9 4.5-9 4.5-9-4.5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7.5v9l9 4.5 9-4.5v-9" />
+                </svg>
+              </div>
+
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#3571DF] shadow-md shadow-[0_10px_24px_rgba(53,113,223,0.25)]">
+                <Image src="/logo_white.png" alt="Tu Partner Contable" width={32} height={32} priority />
+              </div>
             </div>
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-[#1F1F1F]">{service.label}</h3>
