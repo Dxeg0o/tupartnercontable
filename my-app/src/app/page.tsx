@@ -21,7 +21,7 @@ const services = [
       "Visión con datos informada",
       "Reducción de errores",
     ],
-    href: "#contacto",
+    href: "/asesoria-contable",
   },
   {
     id: "tributaria",
@@ -34,7 +34,7 @@ const services = [
       "Defensa y representaciones",
       "Alertas proactivas",
     ],
-    href: "#contacto",
+    href: "/asesoria-tributaria",
   },
   {
     id: "rrhh",
@@ -47,7 +47,7 @@ const services = [
       "Cumplimiento laboral",
       "Escalabilidad del servicio",
     ],
-    href: "#contacto",
+    href: "/asesoria-recursos-humanos",
   },
 ];
 
