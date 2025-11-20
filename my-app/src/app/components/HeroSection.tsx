@@ -65,7 +65,7 @@ export function HeroSection() {
             />
           </div>
 
-          <div className="absolute -left-16 top-12 w-40 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur">
+          <div className="absolute left-2 top-10 w-36 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur sm:-left-16 sm:top-12 sm:w-40">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#5A5A5A]">Revenue Growth</p>
             <p className="mt-2 text-2xl font-bold text-[#1F1F1F]">+36%</p>
             <p className="mt-1 text-xs text-[#5A5A5A]">
@@ -73,7 +73,7 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="absolute -right-14 top-36 w-44 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur">
+          <div className="absolute right-2 top-28 w-40 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur sm:-right-14 sm:top-36 sm:w-44">
             <p className="text-xs font-semibold uppercase tracking-wide text-[#5A5A5A]">Client Satisfaction</p>
             <div className="mt-3 flex items-center gap-2">
               <div className="h-10 w-10 rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)]" />
@@ -84,7 +84,7 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="absolute -left-10 bottom-10 w-48 rounded-3xl border border-[#E6E6E6] bg-[#3571DF] p-4 text-white shadow-xl backdrop-blur">
+          <div className="absolute bottom-4 left-2 w-44 rounded-3xl border border-[#E6E6E6] bg-[#3571DF] p-4 text-white shadow-xl backdrop-blur sm:-left-10 sm:bottom-10 sm:w-48">
             <p className="text-xs font-semibold uppercase tracking-wide opacity-80">Incidents</p>
             <p className="mt-2 text-2xl font-bold">-20.5%</p>
             <p className="mt-1 text-xs opacity-80">Seguimiento mensual</p>
