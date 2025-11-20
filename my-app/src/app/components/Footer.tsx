@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerColumns = [
@@ -34,7 +35,7 @@ export function Footer() {
   const whatsappLink =
     "https://wa.me/56981592966?text=" +
     encodeURIComponent(
-      "Hola Partner Accounting, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+      "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
 
   return (
@@ -42,13 +43,14 @@ export function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-12 lg:flex-row lg:px-8">
         <div className="lg:w-1/3">
           <div className="flex items-center gap-3">
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)] text-lg font-semibold text-white">
-              PA
-            </span>
-            <div className="flex flex-col leading-tight">
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#3571DF]">Partner</span>
-              <span className="text-lg font-semibold text-[#1F1F1F]">Accounting</span>
-            </div>
+            <Image
+              src="/completo.png"
+              alt="Tu Partner Contable logo"
+              width={160}
+              height={52}
+              className="h-12 w-auto"
+              priority
+            />
           </div>
           <p className="mt-5 text-sm text-[#5A5A5A]">
             Acompañamos a empresas que desean claridad financiera, cumplimiento y un equipo experto a su lado en cada decisión relevante de negocio.
@@ -97,7 +99,7 @@ export function Footer() {
 
       <div className="border-t border-[#E6E6E6]">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6 text-xs text-[#5A5A5A] sm:flex-row sm:justify-between lg:px-8">
-          <p>© {new Date().getFullYear()} Partner Accounting. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Tu Partner Contable. Todos los derechos reservados.</p>
           <div className="flex items-center gap-3">
             <Link href="https://www.linkedin.com" className="inline-flex items-center gap-1 rounded-full border border-[#3571DF] px-3 py-1 text-xs font-medium text-[#3571DF] transition hover:bg-[#3571DF]/20">
               <svg className="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

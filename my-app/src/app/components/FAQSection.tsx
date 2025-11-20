@@ -37,7 +37,7 @@ export function FAQSection() {
   const whatsappLink =
     "https://wa.me/56981592966?text=" +
     encodeURIComponent(
-      "Hola Partner Accounting, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+      "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
 
   useEffect(() => {

@@ -9,9 +9,9 @@ import { ServiceHero } from "../components/service/ServiceHero";
 import { landingNavigation } from "../navigation.data";
 
 export const metadata: Metadata = {
-  title: "Asesoría Contable | Partner Accounting",
+  title: "Asesoría Contable | Tu Partner Contable",
   description:
-    "Detalle del servicio de asesoría contable de Partner Accounting: beneficios, alcance y actividades incluidas.",
+    "Detalle del servicio de asesoría contable de Tu Partner Contable: beneficios, alcance y actividades incluidas.",
 };
 
 const heroHighlights = [

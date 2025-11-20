@@ -9,9 +9,9 @@ import { ServiceHero } from "../components/service/ServiceHero";
 import { landingNavigation } from "../navigation.data";
 
 export const metadata: Metadata = {
-  title: "Asesoría Tributaria | Partner Accounting",
+  title: "Asesoría Tributaria | Tu Partner Contable",
   description:
-    "Detalle del servicio de asesoría tributaria integral de Partner Accounting: trámites ante el SII, declaraciones y acompañamiento experto.",
+    "Detalle del servicio de asesoría tributaria integral de Tu Partner Contable: trámites ante el SII, declaraciones y acompañamiento experto.",
 };
 
 const heroHighlights = [

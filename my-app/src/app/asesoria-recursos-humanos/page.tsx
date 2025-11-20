@@ -9,9 +9,9 @@ import { ServiceHero } from "../components/service/ServiceHero";
 import { landingNavigation } from "../navigation.data";
 
 export const metadata: Metadata = {
-  title: "Asesoría en Recursos Humanos | Partner Accounting",
+  title: "Asesoría en Recursos Humanos | Tu Partner Contable",
   description:
-    "Detalle del servicio de asesoría en recursos humanos de Partner Accounting: gestión de remuneraciones, asesoría laboral y planificación tributaria.",
+    "Detalle del servicio de asesoría en recursos humanos de Tu Partner Contable: gestión de remuneraciones, asesoría laboral y planificación tributaria.",
 };
 
 const heroHighlights = [
