@@ -172,7 +172,6 @@ export default function AccountingAdvisoryPage() {
           title="Todo lo que necesitas para una contabilidad confiable"
           description="Cubrimos la operación diaria y los análisis avanzados para que la información financiera llegue depurada, a tiempo y alineada a las normas contables vigentes."
           categories={serviceCategories}
-          highlights={heroHighlights}
         />
 
         <ContactSection />

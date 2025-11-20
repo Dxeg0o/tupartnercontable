@@ -188,7 +188,6 @@ export default function HumanResourcesAdvisoryPage() {
           title="Acompañamiento integral en recursos humanos"
           description="Abarcamos la nómina, el marco legal y la planificación tributaria laboral para que puedas tomar decisiones con información completa y trazable."
           categories={serviceCategories}
-          highlights={heroHighlights}
         />
 
         <ContactSection />

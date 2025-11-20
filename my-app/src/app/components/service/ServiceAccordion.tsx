@@ -13,7 +13,6 @@ interface ServiceAccordionProps {
   title: string;
   description: string;
   categories: ServiceCategory[];
-  highlights?: string[];
 }
 
 function CheckIcon() {
@@ -38,7 +37,6 @@ export function ServiceAccordion({
   title,
   description,
   categories,
-  highlights,
 }: ServiceAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -111,23 +109,6 @@ export function ServiceAccordion({
           );
         })}
       </div>
-
-      {highlights?.length ? (
-        <div className="mt-8 rounded-2xl border border-dashed border-[#3571DF] bg-white/80 p-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#3571DF]">Gestiones recurrentes</p>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {highlights.map((highlight) => (
-              <span
-                key={highlight}
-                className="inline-flex items-center gap-2 rounded-full bg-[#E6E6E6] px-4 py-1.5 text-xs font-semibold text-[#5A5A5A]"
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)]" aria-hidden />
-                {highlight}
-              </span>
-            ))}
-          </div>
-        </div>
-      ) : null}
     </section>
   );
 }

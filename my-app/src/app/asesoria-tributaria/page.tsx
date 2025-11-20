@@ -208,15 +208,6 @@ const serviceCategories = [
   },
 ];
 
-const managementHighlights = [
-  "Planificación tributaria a la medida",
-  "Monitoreo de obligaciones mensuales",
-  "Alertas proactivas de cambios normativos",
-  "Auditoría de registros contables",
-  "Preparación de expedientes para fiscalizaciones",
-  "Acompañamiento estratégico en decisiones de inversión",
-];
-
 export default function TaxAdvisoryPage() {
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#FFFFFF,#E6E6E6)]">
@@ -245,7 +236,6 @@ export default function TaxAdvisoryPage() {
           title="Tramitación, declaraciones y control diario en un mismo servicio"
           description="Abarcamos desde los trámites iniciales ante el SII hasta la operación diaria, asegurando que cada obligación esté respaldada por registros consistentes y una estrategia fiscal sólida."
           categories={serviceCategories}
-          highlights={managementHighlights}
         />
 
         <ContactSection />
