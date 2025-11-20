@@ -15,7 +15,7 @@ const contactDetails = [
   {
     label: "Teléfono",
     value: "+56 9 8159 2966",
-    href: "tel:+56981592966",
+    href: "https://wa.me/56981592966?text=Hola%20Partner%20Accounting,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable.",
   },
 ];
 
@@ -33,10 +33,10 @@ export function ContactSection() {
           src="/Partner-Accounting-Home-01.jpg"
           alt="Vista panorámica de Santiago de Chile"
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-5"
           priority
         />
-        <div className="absolute inset-0 bg-[linear-gradient(135deg,#3571DF,#F4621D)] opacity-30" />
+        <div className="absolute inset-0 bg-[linear-gradient(135deg,#3571DF,#F4621D)] opacity-5" />
         <div className="relative grid gap-12 px-8 py-16 md:px-12 lg:grid-cols-2 lg:px-16">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-[#3571DF]">Conversemos</p>

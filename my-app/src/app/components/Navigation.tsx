@@ -39,7 +39,8 @@ export function Navigation({ navigation }: NavigationProps) {
 
         <div className="flex items-center gap-3">
           <Link
-            href="#contacto"
+            href="https://wa.me/56981592966?text=Hola%20Partner%20Accounting,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
+            target="_blank"
             className="hidden rounded-full bg-[#F4621D] px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-[0_10px_30px_rgba(244,98,29,0.25)] transition-all hover:translate-y-0.5 hover:bg-[#FF8750] lg:inline-flex"
           >
             Conversemos
