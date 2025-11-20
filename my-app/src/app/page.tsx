@@ -1,128 +1,245 @@
-import { ContactSection } from "./components/ContactSection";
-import { FAQSection } from "./components/FAQSection";
-import { HeroSection } from "./components/HeroSection";
-import { Footer } from "./components/Footer";
-import { ModalidadesSection } from "./components/ModalidadesSection";
-import { Navigation } from "./components/Navigation";
-import { ProcessSection } from "./components/ProcessSection";
-import { ServicesSection } from "./components/ServicesSection";
-import { TestimonialsCarousel } from "./components/TestimonialsCarousel";
-import { landingNavigation } from "./navigation.data";
+import "./page.css";
 
-const services = [
+const navigationLinks = [
+  { href: "#beneficios", label: "Beneficios" },
+  { href: "#testimonios", label: "Testimonios" },
+  { href: "#proceso", label: "Cómo funciona" },
+];
+
+const features = [
   {
-    id: "servicios",
-    label: "Asesoría Contable",
+    title: "Diseño enfocado en conversiones",
     description:
-      "Nuestra asesoría contable te brinda tranquilidad de tener tus estados financieros al día y con información accionable.",
-    highlights: [
-      "Optimización de procesos",
-      "Cumplimiento normativo",
-      "Visión con datos informada",
-      "Reducción de errores",
-    ],
-    href: "#contacto",
+      "Estructura clara, jerarquía visual y llamados a la acción visibles para maximizar cada visita.",
   },
   {
-    id: "tributaria",
-    label: "Asesoría Tributaria",
+    title: "Experiencia de usuario impecable",
     description:
-      "Reducimos tu carga tributaria con planes diseñados a la medida de tu negocio, anticipándonos a contingencias fiscales.",
-    highlights: [
-      "Planificación fiscal",
-      "Estrategias de ahorro",
-      "Defensa y representaciones",
-      "Alertas proactivas",
-    ],
-    href: "#contacto",
+      "Microinteracciones, legibilidad superior y tiempos de carga optimizados para generar confianza.",
   },
   {
-    id: "rrhh",
-    label: "Asesoría en Recursos Humanos",
+    title: "Mensajes que conectan",
     description:
-      "Gestionamos talento, nómina y cumplimiento laboral con soluciones integrales que cuidan a tu equipo y tu operación.",
-    highlights: [
-      "Gestión del ciclo completo",
-      "Digitalización de procesos",
-      "Cumplimiento laboral",
-      "Escalabilidad del servicio",
-    ],
-    href: "#contacto",
+      "Propuesta de valor directa, prueba social y argumentos centrados en los dolores reales de tu audiencia.",
   },
 ];
 
-const processSteps = [
+const steps = [
   {
-    number: "01",
-    title: "Entendemos tus necesidades",
+    title: "Descubrimiento estratégico",
     description:
-      "Comenzamos con una reunión inmersiva donde analizamos tus indicadores, estructura y desafíos para co-crear objetivos claros.",
-    insight:
-      "Mapeamos oportunidades de mejora con foco en eficiencia operativa, cumplimiento y crecimiento sostenible.",
-    image: "/IT-Business-Process-Image-1.webp",
+      "Analizamos objetivos, audiencia y datos existentes para definir la narrativa y las métricas de éxito.",
   },
   {
-    number: "02",
-    title: "Diseñamos una solución a medida",
+    title: "Prototipo y validación",
     description:
-      "Activamos un equipo multidisciplinario para construir un plan con hitos, responsables y tecnología habilitante.",
-    insight:
-      "Priorizamos quick wins y automatizaciones que entregan visibilidad financiera desde el primer mes.",
-    image: "/IT-Business-Process-Image-2.webp",
+      "Creamos el layout, testeamos la jerarquía de información y ajustamos el flujo hasta que convierta.",
   },
   {
-    number: "03",
-    title: "Implementamos y acompañamos",
+    title: "Entrega y optimización",
     description:
-      "Ejecutamos el roadmap con seguimiento cercano, tableros compartidos y revisión de métricas clave.",
-    insight:
-      "Nuestro squad permanece a tu lado para ajustar estrategias y asegurar resultados sostenidos.",
-    image: "/IT-Business-Process-Image-3.webp",
+      "Implementamos el diseño final, configuramos medición y ejecutamos mejoras continuas basadas en datos.",
   },
 ];
 
-const serviceModes = [
+const testimonials = [
   {
-    title: "Externalización",
-    description:
-      "Delegá tus tareas administrativas y concéntrate en lo que realmente importa. Nuestro outsourcing optimiza tus recursos y te permite tomar decisiones con datos confiables.",
-    highlight: "Automatización, tableros y soporte continuo",
+    quote:
+      "Duplicamos nuestra tasa de conversión en menos de dos meses. El diseño guía al usuario sin fricción.",
+    name: "María Torres",
+    role: "CMO en SaaS B2B",
   },
   {
-    title: "Asesoría Permanente",
-    description:
-      "Conectamos con tu equipo para asegurar cumplimiento, visibilidad y acompañamiento diario. Construimos contigo una estrategia financiera sostenible y alineada a tus objetivos.",
-    highlight: "Equipo dedicado, KPI financieros y roadmap trimestral",
+    quote:
+      "La claridad del mensaje y la velocidad del sitio hicieron que los leads calificados crecieran semana a semana.",
+    name: "Luis Fernández",
+    role: "Director de Ventas",
   },
   {
-    title: "Asesoría Esporádica",
-    description:
-      "¿Necesitás una opinión experta? Atendemos requerimientos puntuales con diagnósticos personalizados y soluciones accionables cuando más lo necesitás.",
-    highlight: "Respuestas ágiles para decisiones clave",
+    quote:
+      "El enfoque CRO de la landing redujo el costo por adquisición y elevó el ticket promedio.",
+    name: "Andrea Ríos",
+    role: "Fundadora eCommerce",
   },
 ];
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
-      <Navigation navigation={landingNavigation} />
+    <div className="page-container">
+      <header className="hero" id="inicio">
+        <nav className="navigation">
+          <div className="logo">Crecemos</div>
+          <div className="nav-links">
+            {navigationLinks.map((item) => (
+              <a key={item.href} href={item.href}>
+                {item.label}
+              </a>
+            ))}
+          </div>
+          <a className="cta-button" href="#cta-final">
+            Agenda una demo
+          </a>
+        </nav>
 
-      <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">
-        <HeroSection />
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">Landing page moderna y persuasiva</p>
+            <h1>Convierte más con una experiencia diseñada para decidir</h1>
+            <p className="hero-description">
+              Creamos interfaces claras, acciones visibles y mensajes alineados a las
+              necesidades de tus usuarios. Diseños listos para lanzar, medir y
+              optimizar.
+            </p>
+            <div className="hero-actions">
+              <a className="cta-button" href="#beneficios">
+                Ver beneficios
+              </a>
+              <a className="secondary-link" href="#proceso">
+                Conoce el proceso
+              </a>
+            </div>
+            <div className="badges">
+              <span className="badge">+40 proyectos lanzados</span>
+              <span className="badge">Especialistas en CRO</span>
+              <span className="badge">Respaldo UX/UI senior</span>
+            </div>
+          </div>
 
-        <ServicesSection services={services} />
+          <div className="hero-card">
+            <div className="card-header">
+              <p className="card-label">Resultados en semanas</p>
+              <span className="status">En producción</span>
+            </div>
+            <h2>Diseño, copywriting y optimización continua</h2>
+            <ul className="card-list">
+              <li>
+                <span className="dot" />
+                Arquitectura enfocada en decisiones clave.
+              </li>
+              <li>
+                <span className="dot" />
+                Contenido persuasivo alineado a etapas del funnel.
+              </li>
+              <li>
+                <span className="dot" />
+                Secciones con prueba social y propuesta clara.
+              </li>
+              <li>
+                <span className="dot" />
+                Ajustes guiados por datos y analítica integrada.
+              </li>
+            </ul>
+            <a className="cta-button full" href="#cta-final">
+              Planifica tu lanzamiento
+            </a>
+          </div>
+        </div>
+      </header>
 
-        <TestimonialsCarousel />
+      <section className="section features" id="beneficios">
+        <div className="section-heading">
+          <p className="eyebrow">Beneficios</p>
+          <h2>Todo lo que necesitas para captar leads listos para comprar</h2>
+          <p className="section-description">
+            Unimos estrategia, UX y contenido para entregar una experiencia convincente
+            desde el primer scroll.
+          </p>
+        </div>
+        <div className="cards-grid">
+          {features.map((feature) => (
+            <article key={feature.title} className="card">
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <ProcessSection steps={processSteps} />
+      <section className="section subtle" id="proceso">
+        <div className="section-heading">
+          <p className="eyebrow">Proceso</p>
+          <h2>Un flujo claro para lanzar rápido y medir mejor</h2>
+          <p className="section-description">
+            Colaboramos contigo en cada paso para asegurar que el diseño responda a
+            objetivos concretos y pueda escalar.
+          </p>
+        </div>
+        <div className="steps">
+          {steps.map((step, index) => (
+            <div key={step.title} className="step">
+              <div className="step-number">0{index + 1}</div>
+              <div>
+                <h3>{step.title}</h3>
+                <p>{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
-        <FAQSection />
+      <section className="section" id="testimonios">
+        <div className="section-heading">
+          <p className="eyebrow">Testimonios</p>
+          <h2>Prueba social que respalda tus resultados</h2>
+          <p className="section-description">
+            Historias reales de equipos que aumentaron conversiones con un diseño
+            estratégico y centrado en el usuario.
+          </p>
+        </div>
+        <div className="cards-grid testimonials">
+          {testimonials.map((testimonial) => (
+            <article key={testimonial.name} className="card testimonial-card">
+              <p className="quote">“{testimonial.quote}”</p>
+              <div className="author">
+                <div className="avatar" aria-hidden="true">
+                  {testimonial.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="author-name">{testimonial.name}</p>
+                  <p className="author-role">{testimonial.role}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        <ModalidadesSection serviceModes={serviceModes} />
+      <section className="section cta-final" id="cta-final">
+        <div className="cta-content">
+          <div>
+            <p className="eyebrow">Listo para avanzar</p>
+            <h2>Lanza tu landing en tiempo récord</h2>
+            <p className="section-description">
+              Agenda una sesión y recibe un plan de trabajo con entregables, fechas y
+              métricas. Sin promesas vacías.
+            </p>
+          </div>
+          <div className="cta-actions">
+            <a className="cta-button" href="#inicio">
+              Agenda una demo
+            </a>
+            <a className="secondary-link" href="mailto:hola@crecemos.com">
+              Escríbenos
+            </a>
+          </div>
+        </div>
+      </section>
 
-        <ContactSection />
-      </main>
-      <Footer />
+      <footer className="footer">
+        <div className="footer-brand">
+          <div className="logo">Crecemos</div>
+          <p>Diseñamos experiencias digitales que convierten visitas en clientes.</p>
+        </div>
+        <div className="footer-links">
+          {navigationLinks.map((item) => (
+            <a key={item.href} href={item.href}>
+              {item.label}
+            </a>
+          ))}
+          <a href="#cta-final">Contacto</a>
+        </div>
+        <p className="footer-note">© 2025 Crecemos. Todos los derechos reservados.</p>
+      </footer>
     </div>
   );
 }
