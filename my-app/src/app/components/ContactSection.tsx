@@ -28,7 +28,7 @@ export function ContactSection() {
 
   return (
     <section id="contacto" className="mt-24">
-      <div className="relative overflow-hidden rounded-3xl bg-slate-900 text-white shadow-2xl">
+      <div className="relative overflow-hidden rounded-3xl bg-[var(--neutral-carbon)] text-[var(--neutral-white)] shadow-2xl">
         <Image
           src="/Partner-Accounting-Home-01.jpg"
           alt="Vista panorámica de Santiago de Chile"
@@ -36,17 +36,20 @@ export function ContactSection() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-indigo-900/70" />
+        <div
+          className="absolute inset-0 opacity-90"
+          style={{ background: "linear-gradient(135deg, #3571DF, #F4621D)" }}
+        />
         <div className="relative grid gap-12 px-8 py-16 md:px-12 lg:grid-cols-2 lg:px-16">
           <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-indigo-200">Conversemos</p>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">
+            <p className="text-sm uppercase tracking-[0.3em] text-[var(--secondary-blue)]">Conversemos</p>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[var(--neutral-white)] md:text-4xl">
               Preparados para trabajar en equipo
             </h2>
-            <p className="mt-4 text-base text-slate-100">
+            <p className="mt-4 text-base text-[var(--neutral-white)]/90">
               Nuestro equipo de expertos está listo para conectarse contigo, diseñar soluciones con impacto y acompañarte en cada etapa. Escríbenos para evaluar tu operación financiera, tributaria o de personas.
             </p>
-            <dl className="mt-8 space-y-6 text-sm text-slate-100">
+            <dl className="mt-8 space-y-6 text-sm text-[var(--neutral-white)]">
               {contactDetails.map((detail) => (
                 <div key={detail.label} className="border-l-2 border-white/30 pl-4">
                   <dt className="font-medium uppercase tracking-wide text-white/80">
@@ -56,7 +59,7 @@ export function ContactSection() {
                     <dd>
                       <a
                         href={detail.href}
-                        className="text-base font-semibold text-white transition hover:text-indigo-200"
+                        className="text-base font-semibold text-[var(--neutral-white)] transition hover:text-[var(--secondary-blue)]"
                       >
                         {detail.value}
                       </a>
@@ -70,26 +73,26 @@ export function ContactSection() {
           </div>
           <div className="flex items-center">
             <div className="w-full rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-              <p className="text-sm uppercase tracking-[0.3em] text-indigo-200">
+              <p className="text-sm uppercase tracking-[0.3em] text-[var(--secondary-blue)]">
                 Agenda inmediata
               </p>
-              <h3 className="mt-4 text-2xl font-semibold leading-tight">
+              <h3 className="mt-4 text-2xl font-semibold leading-tight text-[var(--neutral-white)]">
                 Coordina una videollamada por WhatsApp
               </h3>
-              <p className="mt-4 text-base text-slate-100">
+              <p className="mt-4 text-base text-[var(--neutral-white)]/90">
                 Resolvemos tus dudas en menos de 15 minutos y alineamos próximos pasos para iniciar el trabajo conjunto. Deja tu mensaje y te conectamos con un socio especialista.
               </p>
               <a
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-400/90 px-6 py-4 text-center text-lg font-semibold text-slate-900 transition hover:bg-emerald-300"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[var(--primary-orange)] px-6 py-4 text-center text-lg font-semibold text-[var(--neutral-white)] transition hover:bg-[var(--secondary-orange)]"
                 aria-label="Escribir al equipo por WhatsApp"
               >
                 Conversar por WhatsApp
                 <span aria-hidden="true">↗</span>
               </a>
-              <p className="mt-4 text-sm text-slate-200/80">
+              <p className="mt-4 text-sm text-[var(--neutral-white)]/80">
                 Atención personalizada de lunes a viernes entre 9:00 y 18:30 hrs (GMT-3).
               </p>
             </div>

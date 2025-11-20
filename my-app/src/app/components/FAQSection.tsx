@@ -52,28 +52,28 @@ export function FAQSection() {
   return (
     <section
       id="faq"
-      className="relative mt-28 overflow-hidden rounded-[3rem] border border-indigo-100/70 bg-gradient-to-br from-white via-indigo-50/70 to-slate-50 px-6 py-16 shadow-[0_25px_60px_rgba(15,23,42,0.08)] sm:px-8"
+      className="relative mt-28 overflow-hidden rounded-[3rem] border border-[var(--neutral-light)] bg-[linear-gradient(135deg,rgba(106,154,250,0.14),rgba(255,135,80,0.12))] px-6 py-16 shadow-[0_25px_60px_rgba(31,31,31,0.08)] sm:px-8"
     >
-      <div className="absolute -top-24 -left-16 h-56 w-56 rounded-full bg-indigo-100 blur-3xl" aria-hidden />
-      <div className="absolute -bottom-32 -right-20 h-64 w-64 rounded-full bg-sky-100 blur-3xl" aria-hidden />
+      <div className="absolute -top-24 -left-16 h-56 w-56 rounded-full bg-[rgba(53,113,223,0.18)] blur-3xl" aria-hidden />
+      <div className="absolute -bottom-32 -right-20 h-64 w-64 rounded-full bg-[rgba(244,98,29,0.18)] blur-3xl" aria-hidden />
 
       <div className="relative mx-auto grid max-w-6xl gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24">
         <div className="space-y-8">
-          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-indigo-600 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-indigo-500" />
+          <div className="inline-flex items-center gap-2 rounded-full border border-[var(--neutral-light)] bg-[var(--neutral-white)]/80 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-[var(--primary-blue)] shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-[var(--primary-orange)]" />
             Preguntas Frecuentes
           </div>
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold tracking-tight text-slate-900">
-              ¿Tienes alguna pregunta? <span className="text-indigo-600">¡Tenemos las respuestas!</span>
+            <h2 className="text-4xl font-bold tracking-tight text-[var(--primary-blue)]">
+              ¿Tienes alguna pregunta? <span className="text-[var(--primary-orange)]">¡Tenemos las respuestas!</span>
             </h2>
-            <p className="text-lg leading-relaxed text-slate-600">
+            <p className="text-lg leading-relaxed text-[var(--neutral-gray)]">
               ¿No encuentras la información que necesitas? Nuestro equipo está listo para asistirte y diseñar una solución a medida para tu negocio.
             </p>
           </div>
           <a
             href="#contacto"
-            className="inline-flex w-fit items-center justify-center rounded-full bg-slate-900 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-200 transition hover:-translate-y-0.5 hover:bg-indigo-700"
+            className="inline-flex w-fit items-center justify-center rounded-full bg-[var(--primary-orange)] px-8 py-3 text-sm font-semibold text-[var(--neutral-white)] shadow-lg shadow-[rgba(244,98,29,0.25)] transition hover:-translate-y-0.5 hover:bg-[var(--secondary-orange)]"
           >
             Contáctanos
           </a>
@@ -86,7 +86,7 @@ export function FAQSection() {
             return (
               <div
                 key={faq.question}
-                className="rounded-2xl border border-slate-200/80 bg-white/90 shadow-[0_10px_30px_rgba(15,23,42,0.08)] transition hover:border-indigo-100"
+                className="rounded-2xl border border-[var(--neutral-light)] bg-[var(--neutral-white)]/95 shadow-[0_10px_30px_rgba(31,31,31,0.08)] transition hover:border-[var(--secondary-blue)]/60"
               >
                 <button
                   type="button"
@@ -95,10 +95,10 @@ export function FAQSection() {
                   aria-expanded={isOpen}
                   aria-controls={`faq-panel-${index}`}
                 >
-                  <span className="text-lg font-semibold leading-tight text-slate-900">{faq.question}</span>
+                  <span className="text-lg font-semibold leading-tight text-[var(--neutral-carbon)]">{faq.question}</span>
                   <span
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-                      isOpen ? "bg-indigo-600 text-white border-indigo-500 shadow-inner" : "bg-white"
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--primary-blue)] text-[var(--primary-blue)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                      isOpen ? "bg-[rgba(53,113,223,0.15)] shadow-inner" : "bg-[var(--neutral-white)]"
                     }`}
                     aria-hidden
                   >
@@ -126,7 +126,7 @@ export function FAQSection() {
                     contentRefs.current[index] = element;
                   }}
                   style={{ maxHeight: isOpen ? `${contentHeights[index] ?? 0}px` : "0px" }}
-                  className={`grid overflow-hidden border-t border-slate-100 bg-slate-50/70 px-6 text-base text-slate-600 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                  className={`grid overflow-hidden border-t border-[var(--neutral-light)] bg-[rgba(230,230,230,0.35)] px-6 text-base text-[var(--neutral-gray)] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
                     isOpen ? "grid-rows-[1fr] opacity-100 py-4" : "grid-rows-[0fr] opacity-0"
                   }`}
                 >

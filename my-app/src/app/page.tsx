@@ -104,7 +104,7 @@ const serviceModes = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-b from-[var(--neutral-white)] via-[var(--neutral-white)] to-[var(--neutral-light)]">
       <Navigation navigation={landingNavigation} />
 
       <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col px-6 pb-16 pt-8 lg:px-8">

@@ -50,14 +50,14 @@ const benefits = [
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
-          className="text-indigo-200"
+          className="text-[var(--secondary-blue)]"
         />
         <path
           d="M8 12h8m-4-4v8"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
-          className="text-indigo-500"
+          className="text-[var(--primary-blue)]"
         />
       </svg>
     ),
@@ -71,7 +71,7 @@ const benefits = [
         <path
           d="M12 3l7 4v5c0 4-3 7.5-7 8-4-.5-7-4-7-8V7l7-4z"
           fill="currentColor"
-          className="text-indigo-500"
+          className="text-[var(--primary-blue)]"
         />
         <path
           d="M9 12l2 2 4-4"
@@ -88,13 +88,13 @@ const benefits = [
       "Nuestro equipo se integra a tus procesos para resolver dudas laborales, proteger datos sensibles y responder rápidamente a contingencias.",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden className="h-5 w-5">
-        <circle cx="12" cy="7" r="4" className="text-indigo-200" fill="currentColor" />
+        <circle cx="12" cy="7" r="4" className="text-[var(--secondary-blue)]" fill="currentColor" />
         <path
           d="M4 20c1-4 4-6 8-6s7 2 8 6"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
-          className="text-indigo-500"
+          className="text-[var(--primary-blue)]"
           fill="none"
         />
       </svg>
@@ -111,14 +111,14 @@ const benefits = [
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
-          className="text-indigo-500"
+          className="text-[var(--primary-blue)]"
         />
         <path
           d="M4 7l8-4 8 4-8 4-8-4zM12 11v9"
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
-          className="text-indigo-200"
+          className="text-[var(--secondary-blue)]"
           fill="none"
         />
       </svg>
@@ -162,7 +162,7 @@ const serviceCategories = [
 
 export default function HumanResourcesAdvisoryPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-b from-[var(--neutral-white)] via-[var(--neutral-white)] to-[var(--neutral-light)]">
       <Navigation navigation={landingNavigation} />
 
       <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-20 pt-10 lg:px-8">
