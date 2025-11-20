@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 interface NavigationItem {
@@ -14,9 +15,13 @@ export function Navigation({ navigation }: NavigationProps) {
     <header className="sticky top-0 z-50 w-full border-b border-white/30 bg-white/80 shadow-[0_4px_30px_rgba(15,23,42,0.05)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
-          <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-purple-500 text-lg font-semibold text-white shadow-lg">
-            PA
-          </span>
+          <Image
+            src="/logo_icon.png"
+            alt="Partner Accounting Logo"
+            width={500}
+            height={500}
+            className="h-24 w-24 rounded-2xl"
+          />
           <div className="flex flex-col leading-tight">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-500">Partner</span>
             <span className="text-lg font-semibold">Accounting</span>
