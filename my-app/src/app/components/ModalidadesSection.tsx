@@ -30,25 +30,13 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
           </div>
 
           <div className="absolute -top-10 right-12 flex h-20 w-20 items-center justify-center rounded-full bg-[linear-gradient(135deg,#3571DF,#F4621D)] shadow-xl shadow-[0_18px_34px_rgba(53,113,223,0.25)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="h-8 w-8 text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4.5 12a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0z"
+            <Image
+              src='/logo_white.png'
+              className="h-14 w-14 text-white"               
+              alt="Profesionales analizando indicadores financieros en una tablet"
+              width={420}
+              height={520}           
               />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5"
-              />
-            </svg>
           </div>
 
           <div className="absolute -bottom-10 left-6 w-52 rounded-3xl border border-[#E6E6E6] bg-white/90 p-4 shadow-lg backdrop-blur">
