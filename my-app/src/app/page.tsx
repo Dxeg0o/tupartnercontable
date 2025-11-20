@@ -85,7 +85,7 @@ const serviceModes = [
   {
     title: "Externalización",
     description:
-      "Delegá tus tareas administrativas y concéntrate en lo que realmente importa. Nuestro outsourcing optimiza tus recursos y te permite tomar decisiones con datos confiables.",
+      "Delega tus tareas administrativas y concéntrate en lo que realmente importa. Nuestro outsourcing optimiza tus recursos y te permite tomar decisiones con datos confiables.",
     highlight: "Automatización, tableros y soporte continuo",
   },
   {
@@ -97,7 +97,7 @@ const serviceModes = [
   {
     title: "Asesoría Esporádica",
     description:
-      "¿Necesitás una opinión experta? Atendemos requerimientos puntuales con diagnósticos personalizados y soluciones accionables cuando más lo necesitás.",
+      "¿Necesitas una opinión experta? Atendemos requerimientos puntuales con diagnósticos personalizados y soluciones accionables cuando más lo necesitas.",
     highlight: "Respuestas ágiles para decisiones clave",
   },
 ];

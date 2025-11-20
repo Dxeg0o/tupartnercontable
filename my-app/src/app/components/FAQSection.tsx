@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "¿Qué ventajas tiene externalizar mi contabilidad?",
     answer:
-      "Liberás tiempo y recursos internos mientras un equipo especializado mantiene tus libros al día, entrega reportes claros y te acompaña en decisiones financieras clave.",
+      "Libera tiempo y recursos internos mientras un equipo especializado mantiene tus libros al día, entrega reportes claros y te acompaña en decisiones financieras clave.",
   },
   {
     question: "¿Ofrecen servicios de asesoría financiera?",
