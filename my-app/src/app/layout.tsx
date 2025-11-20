@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tu Partner Contable | Asesoría Contable y Tributaria",
     description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
-    url: "https://www.tupartnercontable.cl",
+    url: "https://tupartnercontable.vercel.app",
     siteName: "Tu Partner Contable",
     locale: "es_CL",
     type: "website",

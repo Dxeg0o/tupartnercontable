@@ -14,18 +14,14 @@ export function Navigation({ navigation }: NavigationProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#E6E6E6] bg-white/90 shadow-[0_4px_30px_rgba(53,113,223,0.08)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-3 text-[#1F1F1F] transition-colors hover:text-[#3571DF]">
+        <Link href="/" className="flex items-center text-[#1F1F1F] transition-colors hover:text-[#3571DF] my-4">
           <Image
-            src="/logo_icon.png"
+            src="/completo.png"
             alt="Partner Accounting Logo"
             width={500}
             height={500}
-            className="h-24 w-24 rounded-2xl"
+            className="h-16 w-auto"
           />
-          <div className="flex flex-col leading-tight">
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3571DF]">Partner</span>
-            <span className="text-lg font-semibold">Accounting</span>
-          </div>
         </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-medium text-[#5A5A5A] lg:flex">
