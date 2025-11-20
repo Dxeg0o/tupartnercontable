@@ -14,11 +14,11 @@ export function InsightGrid({ insights }: InsightGridProps) {
       {insights.map((insight) => (
         <article
           key={insight.title}
-          className="rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-lg shadow-indigo-100/40"
+          className="rounded-2xl border border-[#E6E6E6] bg-white/90 p-6 shadow-lg shadow-[0_12px_30px_rgba(53,113,223,0.12)]"
         >
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-400">{insight.label}</p>
-          <h3 className="mt-3 text-lg font-semibold text-slate-900">{insight.title}</h3>
-          <p className="mt-3 text-sm text-slate-600">{insight.description}</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3571DF]">{insight.label}</p>
+          <h3 className="mt-3 text-lg font-semibold text-[#1F1F1F]">{insight.title}</h3>
+          <p className="mt-3 text-sm text-[#5A5A5A]">{insight.description}</p>
         </article>
       ))}
     </section>

@@ -45,7 +45,7 @@ const benefits = [
         <path
           d="M4 7l8-4 8 4v5.5c0 4.5-3.1 8.6-7.5 9.5C7.1 21.1 4 17 4 12.5V7z"
           fill="currentColor"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
         />
       </svg>
     ),
@@ -62,7 +62,7 @@ const benefits = [
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
         />
         <rect
           x="4"
@@ -73,7 +73,7 @@ const benefits = [
           ry="2"
           stroke="currentColor"
           strokeWidth="2"
-          className="text-indigo-200"
+          className="text-[#6A9AFA]"
           fill="none"
         />
       </svg>
@@ -91,7 +91,7 @@ const benefits = [
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
           fill="none"
         />
       </svg>
@@ -106,7 +106,7 @@ const benefits = [
         <path
           d="M12 3l7 4v5c0 4-3 7.5-7 8-4-0.5-7-4-7-8V7l7-4z"
           fill="currentColor"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
         />
         <path
           d="M10 11l2 2 4-4"
@@ -130,13 +130,13 @@ const benefits = [
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
         />
         <path
           d="M10.29 3.86L1.82 18a1 1 0 00.86 1.5h18.64a1 1 0 00.86-1.5L12.71 3.86a1 1 0 00-1.72 0z"
           stroke="currentColor"
           strokeWidth="2"
-          className="text-indigo-200"
+          className="text-[#6A9AFA]"
           fill="none"
         />
       </svg>
@@ -153,7 +153,7 @@ const benefits = [
           stroke="currentColor"
           strokeWidth="2"
           strokeLinecap="round"
-          className="text-indigo-500"
+          className="text-[#3571DF]"
           fill="none"
         />
         <rect
@@ -162,7 +162,7 @@ const benefits = [
           width="16"
           height="18"
           rx="2"
-          className="text-indigo-200"
+          className="text-[#6A9AFA]"
           stroke="currentColor"
           strokeWidth="2"
           fill="none"
@@ -219,7 +219,7 @@ const managementHighlights = [
 
 export default function TaxAdvisoryPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-indigo-50">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#FFFFFF,#E6E6E6)]">
       <Navigation navigation={landingNavigation} />
 
       <main id="inicio" className="mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 pb-20 pt-10 lg:px-8">

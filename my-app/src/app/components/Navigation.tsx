@@ -12,9 +12,9 @@ interface NavigationProps {
 
 export function Navigation({ navigation }: NavigationProps) {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-white/30 bg-white/80 shadow-[0_4px_30px_rgba(15,23,42,0.05)] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 w-full border-b border-[#E6E6E6] bg-white/90 shadow-[0_4px_30px_rgba(53,113,223,0.08)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-3 text-slate-900 transition-colors hover:text-indigo-600">
+        <Link href="/" className="flex items-center gap-3 text-[#1F1F1F] transition-colors hover:text-[#3571DF]">
           <Image
             src="/logo_icon.png"
             alt="Partner Accounting Logo"
@@ -23,20 +23,20 @@ export function Navigation({ navigation }: NavigationProps) {
             className="h-24 w-24 rounded-2xl"
           />
           <div className="flex flex-col leading-tight">
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-500">Partner</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#3571DF]">Partner</span>
             <span className="text-lg font-semibold">Accounting</span>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 lg:flex">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-[#5A5A5A] lg:flex">
           {navigation.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="group relative transition-colors hover:text-slate-900"
+              className="group relative transition-colors hover:text-[#3571DF]"
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gradient-to-r from-indigo-500 to-purple-500 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-[linear-gradient(135deg,#3571DF,#F4621D)] transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
         </nav>
@@ -44,12 +44,12 @@ export function Navigation({ navigation }: NavigationProps) {
         <div className="flex items-center gap-3">
           <Link
             href="#contacto"
-            className="hidden rounded-full bg-slate-900/90 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition-all hover:translate-y-0.5 hover:bg-slate-900 lg:inline-flex"
+            className="hidden rounded-full bg-[#F4621D] px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-[0_10px_30px_rgba(244,98,29,0.25)] transition-all hover:translate-y-0.5 hover:bg-[#FF8750] lg:inline-flex"
           >
             Conversemos
           </Link>
           <button
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-indigo-200 hover:text-indigo-600 lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition-colors hover:bg-[#3571DF]/20 hover:text-[#3571DF] lg:hidden"
             aria-label="Abrir menú"
           >
             <svg
