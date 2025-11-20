@@ -34,6 +34,11 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [contentHeights, setContentHeights] = useState<number[]>([]);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const whatsappLink =
+    "https://wa.me/56981592966?text=" +
+    encodeURIComponent(
+      "Hola Partner Accounting, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+    );
 
   useEffect(() => {
     const paddingOffset = 32; // Account for vertical padding added when the accordion is open
@@ -72,7 +77,9 @@ export function FAQSection() {
             </p>
           </div>
           <a
-            href="#contacto"
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex w-fit items-center justify-center rounded-full bg-[#F4621D] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-[0_12px_30px_rgba(244,98,29,0.25)] transition hover:-translate-y-0.5 hover:bg-[#FF8750]"
           >
             Contáctanos

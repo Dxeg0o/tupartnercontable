@@ -31,6 +31,12 @@ const footerColumns = [
 ];
 
 export function Footer() {
+  const whatsappLink =
+    "https://wa.me/56981592966?text=" +
+    encodeURIComponent(
+      "Hola Partner Accounting, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+    );
+
   return (
     <footer className="w-full border-t border-[#E6E6E6] bg-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-12 lg:flex-row lg:px-8">
@@ -99,7 +105,12 @@ export function Footer() {
               </svg>
               LinkedIn
             </Link>
-            <Link href="#contacto" className="inline-flex items-center gap-2 rounded-full bg-[#F4621D] px-4 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#FF8750]">
+            <Link
+              href={whatsappLink}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[#F4621D] px-4 py-1.5 text-xs font-semibold text-white shadow-sm transition hover:bg-[#FF8750]"
+            >
               <span>Contáctanos</span>
             </Link>
           </div>

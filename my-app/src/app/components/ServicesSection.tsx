@@ -13,6 +13,12 @@ interface ServicesSectionProps {
 }
 
 export function ServicesSection({ services }: ServicesSectionProps) {
+  const whatsappLink =
+    "https://wa.me/56981592966?text=" +
+    encodeURIComponent(
+      "Hola Partner Accounting, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+    );
+
   return (
     <section className="mt-24" aria-labelledby="servicios-heading">
       <div className="flex flex-col gap-6 text-center">
@@ -97,10 +103,12 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           </p>
         </div>
         <Link
-          href="#contacto"
+          href={whatsappLink}
           className="inline-flex items-center justify-center rounded-full bg-white/90 px-6 py-3 text-sm font-semibold text-[#3571DF] shadow-lg shadow-[0_16px_30px_rgba(255,255,255,0.35)] transition hover:bg-white"
+          target="_blank"
+          rel="noreferrer"
         >
-          Agenda una consultoría
+          Hablemos
         </Link>
       </div>
     </section>
