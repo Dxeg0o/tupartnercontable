@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 type Testimonial = {
   companyLogo: string;
@@ -46,10 +46,18 @@ export function TestimonialsCarousel() {
     [activeIndex]
   );
 
-  const goTo = (index: number) => {
+  const goTo = useCallback((index: number) => {
     const normalized = (index + TESTIMONIALS.length) % TESTIMONIALS.length;
     setActiveIndex(normalized);
-  };
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goTo(activeIndex + 1);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [activeIndex, goTo]);
 
   return (
     <section
@@ -75,7 +83,10 @@ export function TestimonialsCarousel() {
       </div>
 
       <div className="relative w-full max-w-4xl">
-        <div className="rounded-[2.75rem] border border-[#E6E6E6] bg-white/85 p-10 text-center shadow-2xl shadow-[0_18px_46px_rgba(53,113,223,0.16)]">
+        <div
+          key={activeIndex}
+          className="rounded-[2.75rem] border border-[#E6E6E6] bg-white/85 p-10 text-center shadow-2xl shadow-[0_18px_46px_rgba(53,113,223,0.16)] transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] testimonial-fade"
+        >
           <div className="flex justify-center">
             <span className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-[#E6E6E6] bg-[#6A9AFA1A]">
               <Image
