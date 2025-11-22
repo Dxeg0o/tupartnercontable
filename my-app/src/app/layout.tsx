@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     images: ["/Partner-Accounting-Home-01.jpg"],
   },
   icons: {
-    icon: "/logo_icon.png",
-    apple: "/logo_icon.png",
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   },
 };
 
