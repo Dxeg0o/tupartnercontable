@@ -54,21 +54,31 @@ export function ServiceAccordion({
           return (
             <article
               key={category.title}
-              className="overflow-hidden rounded-2xl border border-[#E6E6E6] bg-white/90 backdrop-blur-sm transition hover:border-[#6A9AFA]"
+              className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
+                isOpen
+                  ? "border-[#6A9AFA] bg-white shadow-md"
+                  : "border-[#E6E6E6] bg-white/90 hover:border-[#6A9AFA]"
+              }`}
             >
               <button
                 type="button"
-                className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
+                className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 aria-expanded={isOpen}
               >
                 <div className="space-y-1">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3571DF]">{category.title}</p>
-                  <p className="text-base font-semibold text-[#092961] lg:text-lg">{category.intro}</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#3571DF]">
+                    {category.title}
+                  </p>
+                  <p className="text-base font-semibold text-[#092961] lg:text-lg">
+                    {category.intro}
+                  </p>
                 </div>
                 <span
-                  className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-[#E6E6E6] bg-white text-[#3571DF] shadow-sm transition-transform duration-300 ${
-                    isOpen ? "rotate-180" : "rotate-0"
+                  className={`flex h-10 w-10 flex-none items-center justify-center rounded-full border border-[#E6E6E6] shadow-sm transition-all duration-300 ${
+                    isOpen
+                      ? "rotate-180 bg-[#3571DF] text-white border-[#3571DF]"
+                      : "rotate-0 bg-white text-[#3571DF]"
                   }`}
                   aria-hidden
                 >
@@ -87,22 +97,24 @@ export function ServiceAccordion({
               </button>
 
               <div
-                className={`px-5 transition-all duration-500 ease-out ${
-                  isOpen ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
+                className={`grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                  isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                 }`}
               >
-                <div className="pb-5 pt-1">
-                  <ul className="space-y-3 text-sm text-[#5A5A5A] lg:text-base">
-                    {category.items.map((item) => (
-                      <li
-                        key={item}
-                        className="flex items-start gap-3 rounded-xl border border-[#E6E6E6] bg-[#E6E6E6]/40 p-3 shadow-sm"
-                      >
-                        <CheckIcon />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <div className="overflow-hidden">
+                  <div className="border-t border-[#E6E6E6] bg-[#F8FAFC] px-6 py-6">
+                    <ul className="space-y-3 text-sm text-[#5A5A5A] lg:text-base">
+                      {category.items.map((item) => (
+                        <li
+                          key={item}
+                          className="flex items-start gap-3 rounded-xl border border-[#E6E6E6] bg-white p-4 shadow-sm transition hover:border-[#6A9AFA]/30"
+                        >
+                          <CheckIcon />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </article>
