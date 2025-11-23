@@ -93,13 +93,13 @@ export function ServicesSection({ services }: ServicesSectionProps) {
       <div className="mt-20 flex flex-col gap-10 rounded-[2.5rem] border border-[#E6E6E6] bg-[linear-gradient(135deg,#3571DF,#F4621D)] px-10 py-12 text-center text-white shadow-xl shadow-[0_20px_50px_rgba(53,113,223,0.35)] lg:flex-row lg:items-center lg:justify-between lg:text-left">
         <div className="space-y-4" id="empresas">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
-            Modalidades para empresas
+            Respaldo Profesional
           </p>
           <h3 className="text-2xl font-semibold tracking-tight">
-            Diseñamos planes escalables para startups, pymes y corporativos
+            El equipo financiero que tu empresa merece
           </h3>
           <p className="max-w-2xl text-sm leading-relaxed text-white/90">
-            Integramos procesos, tecnología y acompañamiento continuo para consolidar una gestión financiera alineada a tus objetivos de negocio.
+            Más que contadores, somos tus socios estratégicos. Acompañamiento continuo y diseño de planes a la medida de tus desafíos.
           </p>
         </div>
         <Link
@@ -108,7 +108,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           target="_blank"
           rel="noreferrer"
         >
-          Hablemos
+          Hablar por Whatsapp
         </Link>
       </div>
     </section>

@@ -71,13 +71,13 @@ export function ContactSection() {
           <div className="flex items-center">
             <div className="w-full rounded-2xl border border-[#E6E6E6] bg-white/90 p-8 shadow-[0_14px_32px_rgba(53,113,223,0.14)] backdrop-blur">
               <p className="text-sm uppercase tracking-[0.3em] text-[#3571DF]">
-                Agenda inmediata
+                Contacto directo
               </p>
               <h3 className="mt-4 text-2xl font-semibold leading-tight text-[#3571DF]">
-                Coordina una videollamada por WhatsApp
+                Escríbenos directamente por WhatsApp
               </h3>
               <p className="mt-4 text-base text-[#5A5A5A]">
-                Resolvemos tus dudas en menos de 15 minutos y alineamos próximos pasos para iniciar el trabajo conjunto. Deja tu mensaje y te conectamos con un socio especialista.
+                Resolvemos tus dudas puntuales y te orientamos sobre el mejor servicio para tu empresa. Inicia el chat y te responderemos a la brevedad.
               </p>
               <a
                 href={whatsappLink}
@@ -86,7 +86,7 @@ export function ContactSection() {
                 className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#F4621D] px-6 py-4 text-center text-lg font-semibold text-white transition hover:bg-[#FF8750]"
                 aria-label="Escribir al equipo por WhatsApp"
               >
-                Conversar por WhatsApp
+                Escribir por WhatsApp
                 <span aria-hidden="true">↗</span>
               </a>
               <p className="mt-4 text-sm text-[#5A5A5A]">
