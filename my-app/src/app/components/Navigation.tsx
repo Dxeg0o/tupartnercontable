@@ -29,7 +29,7 @@ export function Navigation({ navigation }: NavigationProps) {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#E6E6E6] bg-white/90 shadow-[0_4px_30px_rgba(53,113,223,0.08)] backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+      <div className="relative z-[60] mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
           <Image
             src="/completo.png"
@@ -98,13 +98,13 @@ export function Navigation({ navigation }: NavigationProps) {
 
       <div
         id="mobile-navigation"
-        className={`fixed inset-x-4 top-24 z-50 origin-top rounded-3xl border border-[#E6E6E6] bg-white/95 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl transition-all duration-300 lg:hidden ${
+        className={`fixed inset-0 z-50 h-[100dvh] bg-white/95 backdrop-blur-xl transition-all duration-300 lg:hidden ${
           isMenuOpen
-            ? "scale-100 opacity-100 translate-y-0"
-            : "pointer-events-none scale-95 opacity-0 translate-y-2"
+            ? "translate-y-0 opacity-100"
+            : "pointer-events-none translate-y-full opacity-0"
         }`}
       >
-        <nav className="flex flex-col divide-y divide-[#F0F0F0] p-4 text-base font-medium text-[#092961]">
+        <nav className="flex flex-col divide-y divide-[#F0F0F0] p-4 pt-28 text-base font-medium text-[#092961]">
           {navigation.map((item) => (
             <Link
               key={item.label}
