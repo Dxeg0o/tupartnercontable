@@ -62,7 +62,7 @@ export function ContactSection() {
                       </a>
                     </dd>
                   ) : (
-                    <dd className="text-base font-semibold text-[#092961]">{detail.value}</dd>
+                    <dd className="text-base font-semibold text-[#3571DF]">{detail.value}</dd>
                   )}
                 </div>
               ))}
