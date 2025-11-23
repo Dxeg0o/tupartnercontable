@@ -63,34 +63,28 @@ export function Navigation({ navigation }: NavigationProps) {
           </Link>
           <button
             onClick={toggleMenu}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E6E6E6] text-[#092961] transition-colors hover:bg-[#3571DF]/10 hover:text-[#3571DF] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#3571DF] lg:hidden"
+            className="group relative z-50 inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-[#E6E6E6] bg-white text-[#092961] shadow-sm transition-all hover:bg-[#F4F7FC] hover:text-[#3571DF] focus:outline-none active:scale-90 lg:hidden"
             aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
           >
-            {isMenuOpen ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5" />
-              </svg>
-            )}
+            <div className="flex h-4 w-6 flex-col justify-between items-end overflow-hidden">
+              <span
+                className={`h-[2px] w-full rounded-full bg-current transition-all duration-300 ease-in-out ${
+                  isMenuOpen ? "translate-y-[7px] rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`h-[2px] rounded-full bg-current transition-all duration-300 ease-in-out ${
+                  isMenuOpen ? "w-0 opacity-0" : "w-4"
+                }`}
+              />
+              <span
+                className={`h-[2px] rounded-full bg-current transition-all duration-300 ease-in-out ${
+                  isMenuOpen ? "w-full -translate-y-[7px] -rotate-45" : "w-5"
+                }`}
+              />
+            </div>
           </button>
         </div>
       </div>
