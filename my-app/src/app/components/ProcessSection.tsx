@@ -28,7 +28,7 @@ export function ProcessSection({ steps }: ProcessSectionProps) {
         </div>
       </div>
 
-      <div className="relative space-y-12 before:absolute before:left-8 before:top-0 before:h-full before:w-0.5 before:rounded-full before:bg-[linear-gradient(135deg,#3571DF,#F4621D)] before:content-[''] md:space-y-16 md:before:left-12">
+      <div className="relative space-y-12 md:space-y-16">
         {steps.map((step) => (
           <article
             key={step.number}
@@ -38,7 +38,6 @@ export function ProcessSection({ steps }: ProcessSectionProps) {
               <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-3xl bg-[linear-gradient(135deg,#3571DF,#F4621D)] text-2xl font-semibold text-white shadow-lg shadow-[0_14px_30px_rgba(53,113,223,0.25)]">
                 {step.number}
               </div>
-              <div className="hidden h-full w-px bg-[#E6E6E6] md:block" />
             </div>
             <div className="grid gap-6 md:grid-cols-[1.2fr_1fr] md:items-center">
               <div className="space-y-4 text-left">
@@ -55,7 +54,6 @@ export function ProcessSection({ steps }: ProcessSectionProps) {
                 />
               </div>
             </div>
-            <div className="absolute left-8 top-1/2 hidden h-px w-10 -translate-y-1/2 bg-[linear-gradient(135deg,#3571DF,#F4621D)] md:block" />
           </article>
         ))}
       </div>
