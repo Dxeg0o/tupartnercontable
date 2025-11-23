@@ -14,7 +14,7 @@ const footerColumns = [
   {
     title: "Empresa",
     links: [
-      { label: "Nuestro proceso", href: "#empresas" },
+      { label: "Nuestro proceso", href: "#proceso" },
       { label: "Testimonios", href: "#testimonios" },
       { label: "Preguntas frecuentes", href: "#faq" },
       { label: "Contacto", href: "#contacto" },

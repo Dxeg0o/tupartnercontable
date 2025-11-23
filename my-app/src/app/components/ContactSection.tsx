@@ -83,7 +83,7 @@ export function ContactSection() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#F4621D] px-6 py-4 text-center text-lg font-semibold text-white transition hover:bg-[#FF8750]"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#F4621D] px-6 py-4 text-center text-lg font-semibold text-white transition hover:bg-[#FF8750]"
                 aria-label="Escribir al equipo por WhatsApp"
               >
                 Conversar por WhatsApp

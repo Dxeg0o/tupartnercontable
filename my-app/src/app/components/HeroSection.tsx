@@ -17,7 +17,7 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-[#5A5A5A]">
-            Simplificamos tu contabilidad y optimizamos tus impuestos para que enfoques en lo que realmente importa: tu negocio.
+            Simplificamos tu contabilidad y optimizamos tus impuestos para que te enfoques en lo que realmente importa: tu negocio.
           </p>
         </header>
         <div className="flex flex-col gap-3 sm:flex-row">
