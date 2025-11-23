@@ -48,7 +48,7 @@ export function Navigation({ navigation }: NavigationProps) {
               className="group relative transition-colors hover:text-[#3571DF]"
             >
               {item.label}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-[linear-gradient(135deg,#3571DF,#F4621D)] transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-[1.5px] w-0 bg-[#3571DF] transition-all duration-300 ease-in-out group-hover:w-full" />
             </Link>
           ))}
         </nav>
@@ -119,7 +119,7 @@ export function Navigation({ navigation }: NavigationProps) {
               className="group flex items-center justify-between py-3 transition-colors hover:text-[#3571DF]"
             >
               <span>{item.label}</span>
-              <span className="h-2 w-2 rounded-full bg-gradient-to-r from-[#3571DF] to-[#F4621D] opacity-0 transition-opacity group-hover:opacity-100" />
+              <span className="h-2 w-2 rounded-full bg-[#3571DF] opacity-0 transition-opacity group-hover:opacity-100" />
             </Link>
           ))}
           <Link
