@@ -32,27 +32,11 @@ const faqs = [
 
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const [contentHeights, setContentHeights] = useState<number[]>([]);
-  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
   const whatsappLink =
     "https://wa.me/56981592966?text=" +
     encodeURIComponent(
       "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
-
-  useEffect(() => {
-    const paddingOffset = 32; // Account for vertical padding added when the accordion is open
-    const updateHeights = () => {
-      setContentHeights(
-        contentRefs.current.map((ref) => (ref ? ref.scrollHeight + paddingOffset : 0))
-      );
-    };
-
-    updateHeights();
-    window.addEventListener("resize", updateHeights);
-
-    return () => window.removeEventListener("resize", updateHeights);
-  }, []);
 
   return (
     <section
@@ -93,7 +77,9 @@ export function FAQSection() {
             return (
               <div
                 key={faq.question}
-                className="rounded-2xl border border-[#E6E6E6] bg-white/90 shadow-[0_10px_30px_rgba(53,113,223,0.12)] transition hover:border-[#6A9AFA]"
+                className={`overflow-hidden rounded-2xl border transition-colors duration-300 ${
+                  isOpen ? "border-[#6A9AFA] bg-white shadow-md" : "border-[#E6E6E6] bg-white/90"
+                }`}
               >
                 <button
                   type="button"
@@ -104,13 +90,13 @@ export function FAQSection() {
                 >
                   <span className="text-lg font-semibold leading-tight text-[#3571DF]">{faq.question}</span>
                   <span
-                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-                      isOpen ? "bg-[#3571DF] text-white border-[#3571DF] shadow-inner" : "bg-white"
+                    className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition-all duration-300 ${
+                      isOpen ? "bg-[#3571DF] text-white border-[#3571DF]" : "bg-white"
                     }`}
                     aria-hidden
                   >
                     <svg
-                      className={`h-4 w-4 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                      className={`h-4 w-4 transition-transform duration-300 ${
                         isOpen ? "rotate-180" : "rotate-0"
                       }`}
                       viewBox="0 0 24 24"
@@ -129,16 +115,14 @@ export function FAQSection() {
                 </button>
                 <div
                   id={`faq-panel-${index}`}
-                  ref={(element) => {
-                    contentRefs.current[index] = element;
-                  }}
-                  style={{ maxHeight: isOpen ? `${contentHeights[index] ?? 0}px` : "0px" }}
-                  className={`grid overflow-hidden border-t border-[#E6E6E6] bg-[#E6E6E6] px-6 text-base text-[#5A5A5A] transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
-                    isOpen ? "grid-rows-[1fr] opacity-100 py-4" : "grid-rows-[0fr] opacity-0"
+                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
-                  <div className="min-h-0 leading-relaxed">
-                    {faq.answer}
+                  <div className="overflow-hidden">
+                    <div className="px-6 pb-6 pt-0 text-base leading-relaxed text-[#5A5A5A]">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
               </div>
