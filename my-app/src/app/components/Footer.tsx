@@ -23,10 +23,10 @@ const footerColumns = [
   {
     title: "Legales",
     links: [
-      { label: "Términos y Condiciones", href: "/terminos" },
-      { label: "Política de Privacidad", href: "/privacidad" },
-      { label: "Política de Cookies", href: "/cookies" },
-      { label: "Defensa del Consumidor", href: "#contacto" },
+      { label: "Términos y Condiciones", href: "/terminos-y-condiciones" },
+      { label: "Política de Privacidad", href: "/politica-de-privacidad" },
+      { label: "Política de Cookies", href: "/politica-de-cookies" },
+      { label: "Defensa del Consumidor", href: "/defensa-del-consumidor" },
     ],
   },
 ];
