@@ -77,7 +77,7 @@ export function FAQSection() {
             return (
               <div
                 key={faq.question}
-                className={`overflow-hidden rounded-2xl border transition-colors duration-300 ${
+                className={`overflow-hidden rounded-2xl border transition-all duration-300 ${
                   isOpen ? "border-[#6A9AFA] bg-white shadow-md" : "border-[#E6E6E6] bg-white/90"
                 }`}
               >
@@ -91,14 +91,12 @@ export function FAQSection() {
                   <span className="text-lg font-semibold leading-tight text-[#3571DF]">{faq.question}</span>
                   <span
                     className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#E6E6E6] text-[#5A5A5A] transition-all duration-300 ${
-                      isOpen ? "bg-[#3571DF] text-white border-[#3571DF]" : "bg-white"
+                      isOpen ? "bg-[#3571DF] text-white border-[#3571DF] rotate-180" : "bg-white rotate-0"
                     }`}
                     aria-hidden
                   >
                     <svg
-                      className={`h-4 w-4 transition-transform duration-300 ${
-                        isOpen ? "rotate-180" : "rotate-0"
-                      }`}
+                      className="h-4 w-4"
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +113,7 @@ export function FAQSection() {
                 </button>
                 <div
                   id={`faq-panel-${index}`}
-                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                  className={`grid transition-[grid-template-rows] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${
                     isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
