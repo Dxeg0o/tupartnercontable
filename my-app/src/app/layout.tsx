@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tupartnercontable-imagen.jpg",
+        url: "/tupartnercontable-imagen.png",
         width: 1200,
         height: 630,
         alt: "Tu Partner Contable - Asesoría Profesional",
