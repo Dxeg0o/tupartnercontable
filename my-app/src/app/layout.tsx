@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tu Partner Contable | Asesoría Contable y Tributaria",
     description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
-    images: ["/tupartnercontable.jpg"],
+    images: ["/tupartnercontable-imagen.png"],
   },
   icons: {
     icon: "/icon.png",
