@@ -21,7 +21,7 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
         <div className="relative w-full max-w-[420px]">
           <div className="overflow-hidden rounded-[3rem] border border-[#E6E6E6] bg-white shadow-xl shadow-[0_18px_46px_rgba(53,113,223,0.16)]">
             <Image
-              src="/IT-Business-Benefits-Image.webp"
+              src="/person.png"
               alt="Profesionales analizando indicadores financieros en una tablet"
               width={420}
               height={520}

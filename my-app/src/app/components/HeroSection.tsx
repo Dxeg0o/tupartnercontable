@@ -56,7 +56,7 @@ export function HeroSection() {
         <div className="relative w-full max-w-[420px]">
           <div className="relative overflow-hidden rounded-[3rem] border border-[#E6E6E6] bg-[#E6E6E6] shadow-xl">
             <Image
-              src="/Partner-Accounting-Home-01.jpg"
+              src="/tupartnercontable.jpg"
               alt="Equipo contable trabajando en una reunión en oficina moderna"
               width={420}
               height={520}

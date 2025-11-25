@@ -59,7 +59,7 @@ const processSteps = [
       "Comenzamos con una reunión inmersiva donde analizamos tus indicadores, estructura y desafíos para co-crear objetivos claros.",
     insight:
       "Mapeamos oportunidades de mejora con foco en eficiencia operativa, cumplimiento y crecimiento sostenible.",
-    image: "/IT-Business-Process-Image-1.webp",
+    image: "/IT-Business-Process-Image-1.png",
   },
   {
     number: "02",
@@ -68,7 +68,7 @@ const processSteps = [
       "Activamos un equipo multidisciplinario para construir un plan con hitos, responsables y tecnología habilitante.",
     insight:
       "Priorizamos quick wins y automatizaciones que entregan visibilidad financiera desde el primer mes.",
-    image: "/IT-Business-Process-Image-2.webp",
+    image: "/IT-Business-Process-Image-2.png",
   },
   {
     number: "03",
@@ -77,7 +77,7 @@ const processSteps = [
       "Ejecutamos el roadmap con seguimiento cercano, tableros compartidos y revisión de métricas clave.",
     insight:
       "Nuestro squad permanece a tu lado para ajustar estrategias y asegurar resultados sostenidos.",
-    image: "/IT-Business-Process-Image-3.webp",
+    image: "/IT-Business-Process-Image-3.png",
   },
 ];
 
