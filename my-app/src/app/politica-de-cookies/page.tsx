@@ -12,7 +12,7 @@ export default function PoliticaDeCookies() {
         </h1>
         <div className="prose prose-lg text-[#5A5A5A]">
           <p className="mb-4">
-            Esta política explica qué son las cookies y cómo las utilizamos en el sitio web de <strong>Tu Partner Contable</strong>. Usted debe leer esta política para entender qué tipo de cookies utilizamos, la información que recopilamos mediante las cookies y cómo se utiliza esa información.
+            Esta política explica qué son las cookies y cómo las utilizamos en el sitio web de <strong>Tu Partner Contador</strong>. Usted debe leer esta política para entender qué tipo de cookies utilizamos, la información que recopilamos mediante las cookies y cómo se utiliza esa información.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">1. ¿Qué son las Cookies?</h2>

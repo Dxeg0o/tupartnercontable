@@ -33,7 +33,7 @@ export function Navigation({ navigation }: NavigationProps) {
         <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
           <Image
             src="/logocompleto.png"
-            alt="Tu Partner Contable logo"
+            alt="Tu Partner Contador logo"
             width={500}
             height={500}
             className="h-16 w-auto"

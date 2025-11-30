@@ -12,7 +12,7 @@ export default function DefensaDelConsumidor() {
         </h1>
         <div className="prose prose-lg text-[#5A5A5A]">
           <p className="mb-4">
-            En <strong>Tu Partner Contable</strong>, respetamos y cumplimos plenamente con la normativa vigente en Chile respecto a los derechos de los consumidores, establecida en la <strong>Ley N° 19.496 sobre Protección de los Derechos de los Consumidores</strong>.
+            En <strong>Tu Partner Contador</strong>, respetamos y cumplimos plenamente con la normativa vigente en Chile respecto a los derechos de los consumidores, establecida en la <strong>Ley N° 19.496 sobre Protección de los Derechos de los Consumidores</strong>.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">1. Derecho a Retracto</h2>

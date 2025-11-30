@@ -12,7 +12,7 @@ export default function PoliticaDePrivacidad() {
         </h1>
         <div className="prose prose-lg text-[#5A5A5A]">
           <p className="mb-4">
-            En <strong>Tu Partner Contable</strong>, valoramos su privacidad y estamos comprometidos a proteger sus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos su información, en cumplimiento con la <strong>Ley N° 19.628 sobre Protección de la Vida Privada</strong> de Chile.
+            En <strong>Tu Partner Contador</strong>, valoramos su privacidad y estamos comprometidos a proteger sus datos personales. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos su información, en cumplimiento con la <strong>Ley N° 19.628 sobre Protección de la Vida Privada</strong> de Chile.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">1. Recopilación de Información</h2>

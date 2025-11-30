@@ -16,7 +16,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
   const whatsappLink =
     "https://wa.me/56946816949?text=" +
     encodeURIComponent(
-      "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+      "Hola Tu Partner Contador, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
 
   return (

@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tu Partner Contable | Asesoría Contable y Tributaria",
+  title: "Tu Partner Contador | Asesoría Contable y Tributaria",
   description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
   keywords: ["Contabilidad", "Asesoría Tributaria", "Recursos Humanos", "Pymes", "Chile", "Finanzas"],
-  authors: [{ name: "Tu Partner Contable" }],
-  creator: "Tu Partner Contable",
-  publisher: "Tu Partner Contable",
+  authors: [{ name: "Tu Partner Contador" }],
+  creator: "Tu Partner Contador",
+  publisher: "Tu Partner Contador",
   formatDetection: {
     email: false,
     address: false,
@@ -29,10 +29,10 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Tu Partner Contable | Asesoría Contable y Tributaria",
+    title: "Tu Partner Contador | Asesoría Contable y Tributaria",
     description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
     url: "https://tupartnercontable.vercel.app",
-    siteName: "Tu Partner Contable",
+    siteName: "Tu Partner Contador",
     locale: "es_CL",
     type: "website",
     images: [
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
         url: "/tupartnercontable-imagen.png",
         width: 1200,
         height: 630,
-        alt: "Tu Partner Contable - Asesoría Profesional",
+        alt: "Tu Partner Contador - Asesoría Profesional",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tu Partner Contable | Asesoría Contable y Tributaria",
+    title: "Tu Partner Contador | Asesoría Contable y Tributaria",
     description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
     images: ["/tupartnercontable-imagen.png"],
   },

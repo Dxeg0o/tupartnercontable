@@ -23,7 +23,7 @@ export function ServiceHero({
       <div className="absolute right-6 top-6 h-10 w-auto transition-opacity hover:opacity-100 lg:right-10 lg:top-10 lg:h-14">
         <Image
           src="/logo_white.png"
-          alt="Tu Partner Contable logo"
+          alt="Tu Partner Contador logo"
           width={500}
           height={500}
           className="h-12 md:h-20 w-auto object-contain"

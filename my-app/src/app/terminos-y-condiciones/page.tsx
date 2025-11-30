@@ -12,12 +12,12 @@ export default function TerminosYCondiciones() {
         </h1>
         <div className="prose prose-lg text-[#5A5A5A]">
           <p className="mb-4">
-            Bienvenido al sitio web de <strong>Tu Partner Contable</strong>. Al acceder y utilizar este sitio web, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso, que junto con nuestra política de privacidad rigen la relación de Tu Partner Contable con usted en relación con este sitio web.
+            Bienvenido al sitio web de <strong>Tu Partner Contador</strong>. Al acceder y utilizar este sitio web, usted acepta cumplir y estar sujeto a los siguientes términos y condiciones de uso, que junto con nuestra política de privacidad rigen la relación de Tu Partner Contador con usted en relación con este sitio web.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">1. Información General</h2>
           <p className="mb-4">
-            El titular de este sitio web es <strong>Tu Partner Contable</strong>, empresa de servicios de asesoría contable, tributaria y laboral, con domicilio en la Región Metropolitana, Chile.
+            El titular de este sitio web es <strong>Tu Partner Contador</strong>, empresa de servicios de asesoría contable, tributaria y laboral, con domicilio en la Región Metropolitana, Chile.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">2. Uso del Sitio Web</h2>

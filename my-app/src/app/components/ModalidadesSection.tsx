@@ -33,7 +33,7 @@ export function ModalidadesSection({ serviceModes }: ModalidadesSectionProps) {
             <Image
               src='/logo_white.png'
               className="h-14 w-14 text-white"               
-              alt="Isotipo Tu Partner Contable"
+              alt="Isotipo Tu Partner Contador"
               width={420}
               height={520}           
               />

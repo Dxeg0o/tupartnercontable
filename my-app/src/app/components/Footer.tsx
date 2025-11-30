@@ -35,7 +35,7 @@ export function Footer() {
   const whatsappLink =
     "https://wa.me/56946816949?text=" +
     encodeURIComponent(
-      "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
+      "Hola Tu Partner Contador, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
 
   return (
@@ -45,7 +45,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <Image
               src="/logocompleto.png"
-              alt="Tu Partner Contable logo"
+              alt="Tu Partner Contador logo"
               width={160}
               height={52}
               className="h-12 w-auto"
@@ -99,7 +99,7 @@ export function Footer() {
 
       <div className="border-t border-[#E6E6E6]">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-6 text-xs text-[#5A5A5A] sm:flex-row sm:justify-between lg:px-8">
-          <p>© {new Date().getFullYear()} Tu Partner Contable. Todos los derechos reservados.</p>
+          <p>© {new Date().getFullYear()} Tu Partner Contador. Todos los derechos reservados.</p>
           <div className="flex items-center gap-3">
             <Link href="https://www.linkedin.com" className="inline-flex items-center gap-1 rounded-full border border-[#3571DF] px-3 py-1 text-xs font-medium text-[#3571DF] transition hover:bg-[#3571DF]/20">
               <svg className="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

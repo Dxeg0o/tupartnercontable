@@ -4,8 +4,8 @@ import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
 
 export const metadata = {
-  title: "Nuestro Equipo | Tu Partner Contable",
-  description: "Conoce al equipo de expertos detrás de Tu Partner Contable. Liderazgo estratégico y talento comprometido con tu éxito financiero.",
+  title: "Nuestro Equipo | Tu Partner Contador",
+  description: "Conoce al equipo de expertos detrás de Tu Partner Contador. Liderazgo estratégico y talento comprometido con tu éxito financiero.",
 };
 
 export default function NuestroEquipo() {
@@ -36,7 +36,7 @@ export default function NuestroEquipo() {
             <div className="relative mx-auto h-[380px] w-full max-w-md overflow-hidden rounded-3xl border border-[#E6E6E6] bg-gradient-to-tr from-[#3571DF]/15 via-white to-[#F4621D]/15 shadow-xl lg:h-[460px]">
               <Image
                 src="/andres-cabrera.webp"
-                alt="Andrés Cabrera - CEO Tu Partner Contable"
+                alt="Andrés Cabrera - CEO Tu Partner Contador"
                 fill
                 className="object-cover"
                 priority
@@ -59,7 +59,7 @@ export default function NuestroEquipo() {
 
               <div className="space-y-4 text-[#4A4A4A] leading-relaxed">
                 <p>
-                  Con una trayectoria consolidada en la dirección financiera y estratégica, Andrés lidera Tu Partner Contable con una visión clara: transformar la contabilidad en una herramienta de valor real para las empresas.
+                  Con una trayectoria consolidada en la dirección financiera y estratégica, Andrés lidera Tu Partner Contador con una visión clara: transformar la contabilidad en una herramienta de valor real para las empresas.
                 </p>
                 <p>
                   Su enfoque combina la rigurosidad técnica con una comprensión profunda de los desafíos que enfrentan las empresas modernas, permitiendo ofrecer soluciones que van más allá del cumplimiento normativo y se centran en la rentabilidad y el crecimiento sostenible.
@@ -144,7 +144,7 @@ export default function NuestroEquipo() {
                 <p className="text-sm text-[#5A5A5A]">Próximamente</p>
               </div>
             </div>
-            {/* <Image src="/team-group.jpg" alt="Equipo Tu Partner Contable" fill className="object-cover" /> */}
+            {/* <Image src="/team-group.jpg" alt="Equipo Tu Partner Contador" fill className="object-cover" /> */}
           </div>
         </section>
 
