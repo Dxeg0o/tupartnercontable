@@ -4,27 +4,27 @@ import { useEffect, useRef, useState } from "react";
 
 const faqs = [
   {
-    question: "¿Cómo pueden ayudarme a ahorrar dinero en impuestos?",
+    question: "¿De qué manera optimizan mi carga tributaria?",
     answer:
       "Analizamos tus obligaciones tributarias, identificamos beneficios disponibles y diseñamos estrategias preventivas para optimizar tus pagos, siempre con foco en el cumplimiento normativo.",
   },
   {
-    question: "¿Qué ventajas tiene externalizar mi contabilidad?",
+    question: "¿Cuáles son los beneficios de externalizar la contabilidad?",
     answer:
       "Libera tiempo y recursos internos mientras un equipo especializado mantiene tus libros al día, entrega reportes claros y te acompaña en decisiones financieras clave.",
   },
   {
-    question: "¿Ofrecen servicios de asesoría financiera?",
+    question: "¿Incluyen servicios de planificación y asesoría financiera?",
     answer:
       "Sí, integramos análisis financiero, proyecciones y tableros personalizados para ayudarte a anticipar escenarios y tomar decisiones estratégicas informadas.",
   },
   {
-    question: "¿Qué tipos de empresas atienden?",
+    question: "¿Con qué tipo de empresas y sectores trabajan?",
     answer:
       "Trabajamos con startups, pymes y empresas en crecimiento de diversas industrias, adaptando nuestros procesos y tecnología al ritmo de cada organización.",
   },
   {
-    question: "¿Qué necesito para contratar sus servicios?",
+    question: "¿Cómo puedo comenzar a trabajar con ustedes?",
     answer:
       "Solo agenda una reunión de diagnóstico. Revisaremos tus necesidades, definiremos objetivos y construiremos una propuesta alineada a tu contexto.",
   },
