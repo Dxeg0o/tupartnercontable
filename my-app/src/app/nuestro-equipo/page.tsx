@@ -55,6 +55,9 @@ export default function NuestroEquipo() {
                 <span className="rounded-full border border-[#E6E6E6] bg-white px-4 py-2 text-sm font-semibold text-[#5A5A5A] shadow-sm">
                   Executive MBA en Finanzas
                 </span>
+                <span className="rounded-full border border-[#E6E6E6] bg-white px-4 py-2 text-sm font-semibold text-[#5A5A5A] shadow-sm">
+                  Profesor Full Time UAI
+                </span>
               </div>
 
               <div className="space-y-4 text-[#4A4A4A] leading-relaxed">
