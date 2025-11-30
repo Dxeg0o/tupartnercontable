@@ -54,7 +54,7 @@ const services = [
 const processSteps = [
   {
     number: "01",
-    title: "Entendemos tus necesidades",
+    title: "Diagnóstico de tu situación actual",
     description:
       "Comenzamos con una reunión inmersiva donde analizamos tus indicadores, estructura y desafíos para co-crear objetivos claros.",
     insight:
@@ -63,7 +63,7 @@ const processSteps = [
   },
   {
     number: "02",
-    title: "Diseñamos una solución a medida",
+    title: "Construcción de una solución personalizada",
     description:
       "Activamos un equipo multidisciplinario para construir un plan con hitos, responsables y tecnología habilitante.",
     insight:

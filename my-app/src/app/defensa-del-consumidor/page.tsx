@@ -20,7 +20,7 @@ export default function DefensaDelConsumidor() {
             De acuerdo con el artículo 3 bis de la Ley 19.496, en los contratos celebrados por medios electrónicos, y en aquellos en que se aceptare una oferta realizada a través de catálogos, avisos o cualquier otra forma de comunicación a distancia, el consumidor podrá poner término unilateralmente al contrato en el plazo de <strong>10 días</strong> contados desde la recepción del producto o desde la contratación del servicio y antes de que éste se preste.
           </p>
           <p className="mb-4">
-            Para ejercer este derecho, el usuario deberá enviar una comunicación escrita al correo <strong>supervisor@partner-accounting.cl</strong> indicando su voluntad de ejercer el derecho a retracto.
+            Para ejercer este derecho, el usuario deberá enviar una comunicación escrita al correo <strong>andres.cabrera@tupartnercontador.cl</strong> indicando su voluntad de ejercer el derecho a retracto.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">2. Garantía Legal (6x3)</h2>
@@ -44,8 +44,8 @@ export default function DefensaDelConsumidor() {
             Para cualquier consulta, reclamo o solicitud relacionada con sus derechos como consumidor, ponemos a su disposición los siguientes canales de atención:
           </p>
           <ul className="mb-4 list-disc pl-5">
-            <li><strong>Correo Electrónico:</strong> supervisor@partner-accounting.cl</li>
-            <li><strong>Teléfono:</strong> +56 9 8195 2968</li>
+            <li><strong>Correo Electrónico:</strong> andres.cabrera@tupartnercontador.cl</li>
+            <li><strong>Teléfono:</strong> +56 9 4681 6949</li>
             <li><strong>Dirección:</strong> Región Metropolitana, Chile.</li>
           </ul>
           <p className="mb-4">

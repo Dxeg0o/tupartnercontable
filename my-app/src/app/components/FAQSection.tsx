@@ -33,7 +33,7 @@ const faqs = [
 export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const whatsappLink =
-    "https://wa.me/56981592966?text=" +
+    "https://wa.me/56946816949?text=" +
     encodeURIComponent(
       "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );

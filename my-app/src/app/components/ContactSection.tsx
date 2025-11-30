@@ -3,25 +3,22 @@
 import Image from "next/image";
 
 const contactDetails = [
-  {
-    label: "Oficina",
-    value: "Los Militares 5620, Las Condes, Región Metropolitana",
-  },
+
   {
     label: "Email",
-    value: "supervisor@partner-accounting.cl",
-    href: "mailto:supervisor@partner-accounting.cl",
+    value: "andres.cabrera@tupartnercontador.cl",
+    href: "mailto:andres.cabrera@tupartnercontador.cl",
   },
   {
     label: "Teléfono",
-    value: "+56 9 8159 2966",
-    href: "https://wa.me/56981592966?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable.",
+    value: "+56 9 4681 6949",
+    href: "https://wa.me/56946816949?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable.",
   },
 ];
 
 export function ContactSection() {
   const whatsappLink =
-    "https://wa.me/56981592966?text=" +
+    "https://wa.me/56946816949?text=" +
     encodeURIComponent(
       "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );

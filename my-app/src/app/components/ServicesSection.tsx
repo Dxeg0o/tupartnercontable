@@ -14,7 +14,7 @@ interface ServicesSectionProps {
 
 export function ServicesSection({ services }: ServicesSectionProps) {
   const whatsappLink =
-    "https://wa.me/56981592966?text=" +
+    "https://wa.me/56946816949?text=" +
     encodeURIComponent(
       "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
@@ -28,7 +28,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
         </div>
         <div className="space-y-4">
           <h2 id="servicios-heading" className="text-3xl font-bold tracking-tight text-[#3571DF] sm:text-4xl">
-            Tranquilidad contable en tus manos
+            Un partner en tu crecimiento
           </h2>
           <p className="mx-auto max-w-3xl text-base leading-relaxed text-[#5A5A5A]">
             Confía en nuestra experiencia para gestionar de forma eficiente tus finanzas, asegurando el cumplimiento puntual y estratégico de todas tus obligaciones fiscales.

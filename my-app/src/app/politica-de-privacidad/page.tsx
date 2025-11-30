@@ -52,7 +52,7 @@ export default function PoliticaDePrivacidad() {
             <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos para fines específicos.</li>
           </ul>
           <p className="mb-4">
-            Para ejercer cualquiera de estos derechos, por favor contáctenos a través de nuestro correo electrónico: <strong>supervisor@partner-accounting.cl</strong>.
+            Para ejercer cualquiera de estos derechos, por favor contáctenos a través de nuestro correo electrónico: <strong>andres.cabrera@tupartnercontador.cl</strong>.
           </p>
 
           <h2 className="mt-8 mb-4 text-xl font-semibold text-[#1A1A1A]">5. Control de su Información Personal</h2>

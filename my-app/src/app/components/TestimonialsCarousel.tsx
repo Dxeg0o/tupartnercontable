@@ -13,12 +13,12 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    companyLogo: "/carrousel/Tommy-Rey.jpg",
-    companyAlt: "Leo Soto de La Sonora de Tommy Rey",
+    companyLogo: "/carrousel/Sonora-Todos.jpg",
+    companyAlt: "Leo Soto de La Gran Sonora de Todos",
     quote:
       "Nos ayudaron a implementar una estructura tributaria que ha sido clave para el crecimiento de nuestras actividades culturales, aprovechando todos los beneficios fiscales disponibles. Hoy operamos de manera más eficiente y sin los obstáculos tributarios que antes enfrentábamos.",
     author: "Leo Soto",
-    role: "Manager & Productor Musical de La Sonora de Tommy Rey",
+    role: "Manager & Productor Musical de La Gran Sonora de Todos",
   },
   {
     companyLogo: "/carrousel/Marley.jpg",
@@ -27,14 +27,6 @@ const TESTIMONIALS: Testimonial[] = [
       "Gracias a su asesoría, hemos optimizado recursos, evitado contingencias tributarias y mejorado la productividad interna. Su conocimiento profundo del mercado y su atención dedicada nos hacen sentir seguros en cada paso.",
     author: "Roberto Larsen Suau",
     role: "CEO de Marley Coffee",
-  },
-  {
-    companyLogo: "/carrousel/Greace-College.png",
-    companyAlt: "Roberto Álvarez de Grace College",
-    quote:
-      "El manejo financiero y contable de Grace College ha mejorado significativamente desde que comenzamos a trabajar con ellos. Su asesoría ha sido fundamental para llevar a cabo proyectos de expansión, con una planificación fiscal sólida y eficiente.",
-    author: "Roberto Álvarez",
-    role: "Sostenedor de Grace College",
   },
 ];
 

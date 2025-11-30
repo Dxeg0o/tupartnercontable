@@ -33,7 +33,7 @@ const footerColumns = [
 
 export function Footer() {
   const whatsappLink =
-    "https://wa.me/56981592966?text=" +
+    "https://wa.me/56946816949?text=" +
     encodeURIComponent(
       "Hola Tu Partner Contable, me gustaría coordinar una reunión para conversar sobre asesoría contable."
     );
@@ -44,7 +44,7 @@ export function Footer() {
         <div className="lg:w-1/3">
           <div className="flex items-center gap-3">
             <Image
-              src="/completo.png"
+              src="/logocompleto.png"
               alt="Tu Partner Contable logo"
               width={160}
               height={52}
@@ -60,7 +60,7 @@ export function Footer() {
               <svg className="h-5 w-5 text-[#3571DF]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18" />
               </svg>
-              supervisor@partner-accounting.cl
+              andres.cabrera@tupartnercontador.cl
             </span>
           </div>
           <div className="mt-2 flex items-center gap-4 text-sm text-[#5A5A5A]">
@@ -74,7 +74,7 @@ export function Footer() {
               <svg className="h-5 w-5 text-[#3571DF]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2 8l10-6 10 6v8l-10 6-10-6V8z" />
               </svg>
-              +56 9 8195 2968
+              +56 9 4681 6949
             </span>
           </div>
         </div>

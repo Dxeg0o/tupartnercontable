@@ -13,7 +13,7 @@ export function HeroSection() {
           <h1 className="text-4xl font-bold tracking-tight text-[#092961] sm:text-5xl">
             Asesoría y Consultoría
             <span className="block text-[#3571DF]">
-              Contable, Financiera &amp; Tributaria
+              Contable, Financiera, Tributaria &amp; Recursos Humanos
             </span>
           </h1>
           <p className="max-w-xl text-lg leading-relaxed text-[#5A5A5A]">

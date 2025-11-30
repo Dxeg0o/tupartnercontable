@@ -32,7 +32,7 @@ export function Navigation({ navigation }: NavigationProps) {
       <div className="relative z-[60] mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
           <Image
-            src="/completo.png"
+            src="/logocompleto.png"
             alt="Tu Partner Contable logo"
             width={500}
             height={500}
@@ -55,7 +55,7 @@ export function Navigation({ navigation }: NavigationProps) {
 
         <div className="flex items-center gap-3">
           <Link
-            href="https://wa.me/56981592966?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
+            href="https://wa.me/56946816949?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
             target="_blank"
             className="hidden rounded-full bg-[#F4621D] px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-[0_10px_30px_rgba(244,98,29,0.25)] transition-all hover:translate-y-0.5 hover:bg-[#FF8750] lg:inline-flex"
           >
@@ -117,7 +117,7 @@ export function Navigation({ navigation }: NavigationProps) {
             </Link>
           ))}
           <Link
-            href="https://wa.me/56981592966?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
+            href="https://wa.me/56946816949?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
             target="_blank"
             onClick={closeMenu}
             className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#3571DF] to-[#F4621D] px-4 py-3 text-sm font-semibold text-white shadow-md shadow-[0_14px_35px_rgba(53,113,223,0.25)] transition-all hover:translate-y-0.5"
