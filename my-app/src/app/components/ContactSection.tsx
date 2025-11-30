@@ -27,7 +27,7 @@ export function ContactSection() {
     <section id="contacto" className="mt-24">
       <div className="relative overflow-hidden rounded-3xl border border-[#E6E6E6] bg-white shadow-2xl">
         <Image
-          src="/tupartnercontable-imagen.png"
+          src="/hero.png"
           alt="Vista panorámica de Santiago de Chile"
           fill
           className="object-cover opacity-5"

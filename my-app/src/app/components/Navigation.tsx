@@ -30,29 +30,6 @@ export function Navigation({ navigation }: NavigationProps) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-[#E6E6E6] bg-white/90 shadow-[0_4px_30px_rgba(53,113,223,0.08)] backdrop-blur-xl">
       <div className="relative z-[60] mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
-          <Image
-            src="/logocompleto.png"
-            alt="Tu Partner Contador logo"
-            width={500}
-            height={500}
-            className="h-16 w-auto"
-          />
-        </Link>
-
-        <nav className="hidden items-center gap-8 text-sm font-medium text-[#5A5A5A] lg:flex">
-          {navigation.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="group relative transition-colors hover:text-[#3571DF]"
-            >
-              {item.label}
-              <span className="absolute -bottom-1 left-0 h-[1.5px] w-0 bg-[#3571DF] transition-all duration-300 ease-in-out group-hover:w-full" />
-            </Link>
-          ))}
-        </nav>
-
         <div className="flex items-center gap-3">
           <Link
             href="https://wa.me/56946816949?text=Hola%20Tu%20Partner%20Contable,%20me%20gustar%C3%ADa%20coordinar%20una%20reuni%C3%B3n%20para%20conversar%20sobre%20asesor%C3%ADa%20contable."
@@ -87,6 +64,29 @@ export function Navigation({ navigation }: NavigationProps) {
             </div>
           </button>
         </div>
+
+        <nav className="hidden items-center gap-8 text-sm font-medium text-[#5A5A5A] lg:flex">
+          {navigation.map((item) => (
+            <Link
+              key={item.label}
+              href={item.href}
+              className="group relative transition-colors hover:text-[#3571DF]"
+            >
+              {item.label}
+              <span className="absolute -bottom-1 left-0 h-[1.5px] w-0 bg-[#3571DF] transition-all duration-300 ease-in-out group-hover:w-full" />
+            </Link>
+          ))}
+        </nav>
+
+        <Link href="/" className="flex items-center text-[#092961] transition-colors hover:text-[#3571DF] my-4">
+          <Image
+            src="/logocompleto.png"
+            alt="Tu Partner Contador logo"
+            width={500}
+            height={500}
+            className="h-16 w-auto"
+          />
+        </Link>
       </div>
 
       <div

@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/tupartnercontable-imagen.png",
+        url: "/hero.png",
         width: 1200,
         height: 630,
         alt: "Tu Partner Contador - Asesoría Profesional",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Tu Partner Contador | Asesoría Contable y Tributaria",
     description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
-    images: ["/tupartnercontable-imagen.png"],
+    images: ["/hero.png"],
   },
   icons: {
     icon: "/icon.png",
