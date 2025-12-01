@@ -35,7 +35,7 @@ export default function NuestroEquipo() {
           <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
             <div className="relative mx-auto h-[380px] w-full max-w-md overflow-hidden rounded-3xl border border-[#E6E6E6] bg-gradient-to-tr from-[#3571DF]/15 via-white to-[#F4621D]/15 shadow-xl lg:h-[460px]">
               <Image
-                src="/andres-cabrera.webp"
+                src="/andres-cabrera.jpg"
                 alt="Andrés Cabrera - CEO Tu Partner Contador"
                 fill
                 className="object-cover"
