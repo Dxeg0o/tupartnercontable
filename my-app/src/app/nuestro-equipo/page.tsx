@@ -56,7 +56,7 @@ export default function NuestroEquipo() {
                   Executive MBA en Finanzas
                 </span>
                 <span className="rounded-full border border-[#E6E6E6] bg-white px-4 py-2 text-sm font-semibold text-[#5A5A5A] shadow-sm">
-                  Profesor Full Time UAI
+                  Profesor Full Time Escuela de Negocios UAI
                 </span>
               </div>
 
