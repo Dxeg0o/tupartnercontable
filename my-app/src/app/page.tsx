@@ -95,7 +95,7 @@ const serviceModes = [
     highlight: "Equipo dedicado, KPI financieros y roadmap trimestral",
   },
   {
-    title: "Asesoría Esporádica",
+    title: "Asesoría Específica",
     description:
       "¿Necesitas una opinión experta? Atendemos requerimientos puntuales con diagnósticos personalizados y soluciones accionables cuando más lo necesitas.",
     highlight: "Respuestas ágiles para decisiones clave",
