@@ -128,7 +128,7 @@ export default function NuestroEquipo() {
                 },
               ].map((value, idx) => (
                 <div key={idx} className="flex gap-4 rounded-2xl border border-[#E6E6E6] bg-white/70 p-4 shadow-sm">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#3571DF]/10 text-[#3571DF]">
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-[#3571DF]/10 text-[#3571DF] aspect-square">
                     {value.icon}
                   </div>
                   <div>
