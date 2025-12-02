@@ -9,7 +9,7 @@ import { ServiceHero } from "../components/service/ServiceHero";
 import { landingNavigation } from "../navigation.data";
 
 export const metadata: Metadata = {
-  title: "Asesoría Tributaria | Tu Partner Contador",
+  title: "Asesoría Tributaria",
   description:
     "Detalle del servicio de asesoría tributaria integral de Tu Partner Contador: trámites ante el SII, declaraciones y acompañamiento experto.",
 };

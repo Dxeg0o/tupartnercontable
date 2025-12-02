@@ -2,6 +2,11 @@ import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
 
+export const metadata = {
+  title: "Política de Privacidad | Tu Partner Contador",
+  description: "Política de privacidad y protección de datos personales de Tu Partner Contador.",
+};
+
 export default function PoliticaDePrivacidad() {
   return (
     <main className="min-h-screen bg-white">

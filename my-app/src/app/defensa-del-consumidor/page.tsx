@@ -1,6 +1,12 @@
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Defensa del Consumidor",
+  description: "Información sobre derechos del consumidor, garantía legal y canales de reclamo en Tu Partner Contador.",
+};
 
 export default function DefensaDelConsumidor() {
   return (

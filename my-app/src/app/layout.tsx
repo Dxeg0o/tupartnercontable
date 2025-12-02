@@ -13,9 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tu Partner Contador | Asesoría Contable y Tributaria",
-  description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
-  keywords: ["Contabilidad", "Asesoría Tributaria", "Recursos Humanos", "Pymes", "Chile", "Finanzas"],
+  title: {
+    template: "%s | Tu Partner Contador",
+    default: "Tu Partner Contador | Asesoría Contable, Tributaria y RRHH",
+  },
+  description:
+    "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
+  keywords: [
+    "Contabilidad",
+    "Asesoría Tributaria",
+    "Recursos Humanos",
+    "Pymes",
+    "Chile",
+    "Finanzas",
+    "Contador Auditor",
+    "Declaración de Renta",
+    "Startups",
+    "Outsourcing Contable",
+    "Remuneraciones",
+  ],
   authors: [{ name: "Tu Partner Contador" }],
   creator: "Tu Partner Contador",
   publisher: "Tu Partner Contador",
@@ -28,9 +44,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Tu Partner Contador | Asesoría Contable y Tributaria",
-    description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
+    description:
+      "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
     url: "https://tupartnercontable.vercel.app",
     siteName: "Tu Partner Contador",
     locale: "es_CL",
@@ -47,7 +75,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tu Partner Contador | Asesoría Contable y Tributaria",
-    description: "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
+    description:
+      "Servicios profesionales de contabilidad, asesoría tributaria y recursos humanos para empresas en Chile.",
     images: ["/hero.png"],
   },
   icons: {

@@ -1,6 +1,12 @@
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Términos y Condiciones",
+  description: "Términos y condiciones de uso del sitio web de Tu Partner Contador.",
+};
 
 export default function TerminosYCondiciones() {
   return (

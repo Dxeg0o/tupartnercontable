@@ -1,6 +1,12 @@
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Política de Cookies",
+  description: "Política de uso de cookies en el sitio web de Tu Partner Contador.",
+};
 
 export default function PoliticaDeCookies() {
   return (
