@@ -1,9 +1,10 @@
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { landingNavigation } from "../navigation.data";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Política de Privacidad | Tu Partner Contador",
+export const metadata: Metadata = {
+  title: "Política de Privacidad",
   description: "Política de privacidad y protección de datos personales de Tu Partner Contador.",
 };
 
